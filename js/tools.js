@@ -81,6 +81,16 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    $('.ads-media-select-title').click(function() {
+        $(this).parent().toggleClass('open');
+    });
+
+    $(document).click(function(e) {
+        if ($(e.target).parents().filter('.ads-media-select').length == 0) {
+            $('.ads-media-select').removeClass('open');
+        }
+    });
+
 });
 
 $(window).on('load resize scroll', function() {
@@ -103,10 +113,23 @@ $(window).on('load resize scroll', function() {
         }
         if (curScroll + curHeader > curBlock.offset().top + (curSide.offset().top - curBlock.offset().top)) {
             var newTop = curScroll + curHeader - curBlock.offset().top;
-            if (newTop + curBanner.height() < curBlock.height() +  (curSide.offset().top - curBlock.offset().top)) {
+            var curBottom = 39;
+            if (curBlock.hasClass('main-popular-container')) {
+                curBottom = -16;
+            }
+            if (curBlock.hasClass('main-popular-container') && curBlock.find('.pager').length > 0) {
+                curBottom = -33;
+            }
+            if (curBlock.hasClass('main-news-container') && curBlock.find('.pager').length > 0) {
+                curBottom = 22;
+            }
+            if (curBlock.hasClass('main-news-companies')) {
+                curBottom = 64;
+            }
+            if (newTop + curBanner.height() < curBlock.height() + (curSide.offset().top - curBlock.offset().top - curBottom)) {
                 curBanner.css({'top': curHeader, 'position': 'fixed', 'left': curBanner.offset().left});
             } else {
-                curBanner.css({'top': curBlock.height() - curBanner.height(), 'position': 'relative', 'left': 'auto'});
+                curBanner.css({'top': curBlock.height() - curBanner.height() - curBottom, 'position': 'relative', 'left': 'auto'});
             }
         } else {
             curBanner.css({'top': 'auto', 'position': 'relative', 'left': 'auto'});
