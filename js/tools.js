@@ -81,14 +81,39 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
-    $('.ads-media-select-title').click(function() {
+    $('.marketing-media-select-title').click(function() {
         $(this).parent().toggleClass('open');
     });
 
     $(document).click(function(e) {
-        if ($(e.target).parents().filter('.ads-media-select').length == 0) {
-            $('.ads-media-select').removeClass('open');
+        if ($(e.target).parents().filter('.marketing-media-select').length == 0) {
+            $('.marketing-media-select').removeClass('open');
         }
+    });
+
+    $('.search-sort-value').click(function() {
+        $(this).parent().toggleClass('open');
+    });
+
+    $(document).click(function(e) {
+        if ($(e.target).parents().filter('.search-sort').length == 0) {
+            $('.search-sort').removeClass('open');
+        }
+    });
+
+    $('.gallery').each(function() {
+        var curGallery = $(this);
+        curGallery.find('.gallery-list').slick({
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: '<button type="button" class="slick-prev"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.22379 10L13 18.3777L11.6371 20L-4.37114e-07 10L11.6371 -5.08674e-07L13 1.62234L3.22379 10Z" /></svg></button>',
+            nextArrow: '<button type="button" class="slick-next"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.77621 10L8.8276e-07 1.62234L1.3629 -5.08674e-07L13 10L1.3629 20L1.50361e-07 18.3777L9.77621 10Z" /></svg></button>',
+            dots: false
+        }).on('setPosition', function(event, slick) {
+            var currentSlide = curGallery.find('.gallery-list').slick('slickCurrentSlide') + 1;
+            curGallery.find('.gallery-ctrl-current').html(currentSlide);
+        });
     });
 
 });
@@ -125,6 +150,12 @@ $(window).on('load resize scroll', function() {
             }
             if (curBlock.hasClass('main-news-companies')) {
                 curBottom = 64;
+            }
+            if (curBlock.find('.magazine-archive-list').length > 0) {
+                curBottom = -11;
+            }
+            if (curBlock.hasClass('project')) {
+                curBottom = -27;
             }
             if (newTop + curBanner.height() < curBlock.height() + (curSide.offset().top - curBlock.offset().top - curBottom)) {
                 curBanner.css({'top': curHeader, 'position': 'fixed', 'left': curBanner.offset().left});
