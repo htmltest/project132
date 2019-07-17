@@ -81,6 +81,18 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    $('.header-search-link').click(function(e) {
+        $('.header-search').addClass('open');
+        $('.header-search-input input').trigger('focus');
+        e.preventDefault();
+    });
+
+    $(document).click(function(e) {
+        if ($(e.target).parents().filter('.header-search').length == 0) {
+            $('.header-search').removeClass('open');
+        }
+    });
+
     $('.marketing-media-select-title').click(function() {
         $(this).parent().toggleClass('open');
     });
@@ -114,6 +126,25 @@ $(document).ready(function() {
             var currentSlide = curGallery.find('.gallery-list').slick('slickCurrentSlide') + 1;
             curGallery.find('.gallery-ctrl-current').html(currentSlide);
         });
+    });
+
+    $('.brand-footer-close').click(function(e) {
+        $('.brand-footer').fadeOut();
+        e.preventDefault();
+    });
+
+    $('body').on('click', '.form-reset input', function() {
+        window.setTimeout(function() {
+            $('.form-select select').trigger('chosen:updated');
+            $('.form-file input').each(function() {
+                var curInput = $(this);
+                var curField = curInput.parent();
+                if (curInput.val() == '') {
+                    curField.find('.form-file-name').html('');
+                    curField.removeClass('success');
+                }
+            });
+        }, 100);
     });
 
 });
@@ -203,6 +234,13 @@ function initForm(curForm) {
     curForm.find('.form-select select').chosen({disable_search: true});
 
     curForm.find('input.phoneRU').mask('+7 (000) 000-00-00');
+
+    curForm.find('.form-file input').change(function() {
+        var curInput = $(this);
+        var curField = curInput.parent();
+        curField.find('.form-file-name').html(curInput.val().replace(/.*(\/|\\)/, ''));
+        curField.addClass('success');
+    });
 
     curForm.validate({
         ignore: ''
