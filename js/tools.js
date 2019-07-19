@@ -103,16 +103,6 @@ $(document).ready(function() {
         }
     });
 
-    $('.search-sort-value').click(function() {
-        $(this).parent().toggleClass('open');
-    });
-
-    $(document).click(function(e) {
-        if ($(e.target).parents().filter('.search-sort').length == 0) {
-            $('.search-sort').removeClass('open');
-        }
-    });
-
     $('.gallery').each(function() {
         var curGallery = $(this);
         curGallery.find('.gallery-list').slick({
@@ -185,9 +175,22 @@ $(window).on('load resize scroll', function() {
             if (curBlock.find('.magazine-archive-list').length > 0) {
                 curBottom = -11;
             }
+            if (curBlock.find('.magazines-list').length > 0) {
+                curBottom = -3;
+            }
             if (curBlock.hasClass('project')) {
                 curBottom = -27;
             }
+            if (curBlock.hasClass('search')) {
+                curBottom = -33;
+            }
+            if (curBlock.find('.publishers-team').length > 0) {
+                curBottom = -28;
+            }
+            if (curBlock.find('.marketing-list').length > 0) {
+                curBottom = -1;
+            }
+            console.log(curBottom);
             if (newTop + curBanner.height() < curBlock.height() + (curSide.offset().top - curBlock.offset().top - curBottom)) {
                 curBanner.css({'top': curHeader, 'position': 'fixed', 'left': curBanner.offset().left});
             } else {
