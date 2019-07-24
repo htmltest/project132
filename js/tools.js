@@ -11,6 +11,10 @@ $(document).ready(function() {
         initForm($(this));
     });
 
+    $('.table-scroll').mCustomScrollbar({
+        axis: 'x'
+    });
+
     $('body').on('click', '.main-news-more .btn', function(e) {
         var curLink = $(this);
         if (!curLink.hasClass('loading')) {
@@ -65,7 +69,36 @@ $(document).ready(function() {
         slidesToScroll: 6,
         prevArrow: '<button type="button" class="slick-prev"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.22379 10L13 18.3777L11.6371 20L-4.37114e-07 10L11.6371 -5.08674e-07L13 1.62234L3.22379 10Z" /></svg></button>',
         nextArrow: '<button type="button" class="slick-next"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.77621 10L8.8276e-07 1.62234L1.3629 -5.08674e-07L13 10L1.3629 20L1.50361e-07 18.3777L9.77621 10Z" /></svg></button>',
-        dots: false
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 1159,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    arrows: false,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    arrows: false,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    arrows: false,
+                    dots: true
+                }
+            }
+        ]
     });
 
     $('.menu-link').click(function(e) {
@@ -111,7 +144,16 @@ $(document).ready(function() {
             slidesToScroll: 1,
             prevArrow: '<button type="button" class="slick-prev"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.22379 10L13 18.3777L11.6371 20L-4.37114e-07 10L11.6371 -5.08674e-07L13 1.62234L3.22379 10Z" /></svg></button>',
             nextArrow: '<button type="button" class="slick-next"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.77621 10L8.8276e-07 1.62234L1.3629 -5.08674e-07L13 10L1.3629 20L1.50361e-07 18.3777L9.77621 10Z" /></svg></button>',
-            dots: false
+            dots: false,
+            responsive: [
+                {
+                    breakpoint: 1159,
+                    settings: {
+                        arrows: false,
+                        dots: true
+                    }
+                }
+            ]
         }).on('setPosition', function(event, slick) {
             var currentSlide = curGallery.find('.gallery-list').slick('slickCurrentSlide') + 1;
             curGallery.find('.gallery-ctrl-current').html(currentSlide);
@@ -135,6 +177,22 @@ $(document).ready(function() {
                 }
             });
         }, 100);
+    });
+
+    $('.menu-section').each(function() {
+        var curSection = $(this);
+        if (curSection.next().hasClass('menu-section-list')) {
+            curSection.addClass('with-submenu');
+        }
+    });
+
+    $('.menu-section a').click(function(e) {
+        if ($(window).width() < 1160) {
+            if ($(this).parent().hasClass('with-submenu')) {
+                $(this).parent().toggleClass('open');
+                e.preventDefault();
+            }
+        }
     });
 
 });
@@ -190,7 +248,6 @@ $(window).on('load resize scroll', function() {
             if (curBlock.find('.marketing-list').length > 0) {
                 curBottom = -1;
             }
-            console.log(curBottom);
             if (newTop + curBanner.height() < curBlock.height() + (curSide.offset().top - curBlock.offset().top - curBottom)) {
                 curBanner.css({'top': curHeader, 'position': 'fixed', 'left': curBanner.offset().left});
             } else {
@@ -231,6 +288,58 @@ $(window).on('load resize', function() {
             });
         });
     });
+
+    if ($(window).width() > 1159) {
+        $('.main-popular:not(.main-popular-articles) .main-mini-list, .main-calendar-list, .main-navigator-list, .magazine-archive-years').each(function() {
+            var curList = $(this);
+            if (curList.hasClass('slick-slider')) {
+                curList.slick('unslick');
+            }
+        });
+    } else {
+        $('.main-popular:not(.main-popular-articles) .main-mini-list, .main-calendar-list, .magazine-archive-years').each(function() {
+            var curList = $(this);
+            if (!curList.hasClass('slick-slider')) {
+                curList.slick({
+                    infinite: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: false
+                });
+            }
+        });
+
+        $('.main-navigator-list').each(function() {
+            var curList = $(this);
+            if (!curList.hasClass('slick-slider')) {
+                curList.slick({
+                    infinite: false,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    arrows: false,
+                    dots: true,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 3
+                            }
+                        },
+                        {
+                            breakpoint: 767,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 2
+                            }
+                        }
+                    ]
+                });
+            }
+        });
+    }
+
 });
 
 function initForm(curForm) {

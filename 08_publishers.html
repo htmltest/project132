@@ -7,10 +7,12 @@
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="js/chosen/chosen.css" />
         <link rel="stylesheet" href="js/slick/slick.css" />
+        <link rel="stylesheet" href="js/mcustomscrollbar/jquery.mCustomScrollbar.css" />
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
         <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="Cache-Control" content="max-age=31536000" />
     </head>
 
     <body>
@@ -20,7 +22,7 @@
 
             <div class="banner-top">
                 <div class="container">
-                    <a href="#" target="_blank"><img src="files/banner-top.jpg" alt="" /></a>
+                    <a href="#" target="_blank"><img src="files/banner-top.jpg" alt="" /><img src="files/banner-top-mobile.jpg" alt="" class="banner-top-mobile" /></a>
                 </div>
             </div>
 
@@ -35,8 +37,6 @@
                             <div class="banner-header"><a href="#" target="_blank"><img src="files/banner-header.jpg" alt="" /><span>Связываем корпорации<br /> со стартапами</span></a></div>
 
                             <a href="#" class="menu-link"></a>
-
-                            <a href="#" class="header-login"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.0007 8.74984C9.17656 8.74984 8.37098 8.50547 7.68578 8.04763C7.00057 7.58979 6.46652 6.93905 6.15115 6.17769C5.83579 5.41633 5.75328 4.57855 5.91405 3.7703C6.07482 2.96204 6.47166 2.21961 7.05437 1.63689C7.63709 1.05418 8.37952 0.657339 9.18778 0.496567C9.99603 0.335795 10.8338 0.418309 11.5952 0.733674C12.3565 1.04904 13.0073 1.58309 13.4651 2.2683C13.9229 2.9535 14.1673 3.75908 14.1673 4.58317C14.1673 5.68824 13.7283 6.74805 12.9469 7.52945C12.1655 8.31085 11.1057 8.74984 10.0007 8.74984ZM10.0007 2.08317C9.5062 2.08317 9.02285 2.22979 8.61173 2.5045C8.2006 2.7792 7.88017 3.16965 7.69095 3.62646C7.50173 4.08328 7.45223 4.58595 7.54869 5.0709C7.64515 5.55585 7.88325 6.00131 8.23289 6.35094C8.58252 6.70057 9.02798 6.93867 9.51293 7.03514C9.99788 7.1316 10.5005 7.08209 10.9574 6.89287C11.4142 6.70365 11.8046 6.38322 12.0793 5.9721C12.354 5.56098 12.5007 5.07763 12.5007 4.58317C12.5007 3.92013 12.2373 3.28425 11.7684 2.81541C11.2996 2.34656 10.6637 2.08317 10.0007 2.08317Z" /><path d="M17.4993 19.5835H2.49935C2.27834 19.5835 2.06637 19.4957 1.91009 19.3394C1.75381 19.1831 1.66602 18.9712 1.66602 18.7502V16.2502C1.66602 14.4821 2.36839 12.7864 3.61864 11.5361C4.86888 10.2859 6.56457 9.5835 8.33268 9.5835H11.666C13.4341 9.5835 15.1298 10.2859 16.3801 11.5361C17.6303 12.7864 18.3327 14.4821 18.3327 16.2502V18.7502C18.3327 18.9712 18.2449 19.1831 18.0886 19.3394C17.9323 19.4957 17.7204 19.5835 17.4993 19.5835ZM3.33268 17.9168H16.666V16.2502C16.666 14.9241 16.1392 13.6523 15.2015 12.7146C14.2639 11.7769 12.9921 11.2502 11.666 11.2502H8.33268C7.0066 11.2502 5.73483 11.7769 4.79715 12.7146C3.85947 13.6523 3.33268 14.9241 3.33268 16.2502V17.9168Z" /></svg>личный кабинет</a>
 
                             <div class="header-search">
                                 <a href="#" class="header-search-link"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM12.8457 14.366C11.5009 15.3912 9.82153 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.51933 15.5765 10.9397 14.841 12.1496L20.9886 18.2972L18.8827 20.4031L12.8457 14.366Z" /></svg></a>
@@ -347,6 +347,16 @@
                             </div>
                             <!-- publishers projects END -->
 
+                            <!-- mobile banner -->
+                            <div class="mobile-banner">
+                                <div class="banner-side">
+                                    <div class="banner-side-wrap">
+                                        <div class="banner-side-inner"><a href="#" target="_blank"><img src="files/banner-side.jpg" alt="" /></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- mobile banner END -->
+
                             <!-- publishers contacts -->
                             <div class="publishers-contacts">
                                 <div class="main-news-title">контакты</div>
@@ -601,6 +611,7 @@
         <script src="js/validation/messages_ru.js"></script>
         <script src="js/chosen/chosen.jquery.min.js"></script>
         <script src="js/slick/slick.min.js"></script>
+        <script src="js/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="js/tools.js"></script>
 
     </body>
