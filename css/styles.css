@@ -504,6 +504,8 @@ nav ul li a:hover {color:#ec1d22; text-decoration:none}
 @media (max-width:1159px) {
     .main-mini-list {padding:33px 0 0 0}
     .main-popular-articles .main-mini-list {padding:0}
+    .main-mini-photo {height:230px; overflow:hidden}
+    .main-mini-photo img {height:230px; position:relative; width:auto; max-width:none; left:50%; transform:translateX(-50%)}
     .main-mini-type {margin:23px 0 0 0}
     .main-mini-title {font-size:16px; line-height:21px}
     .main-mini-anonce {display:none}
@@ -523,6 +525,10 @@ nav ul li a:hover {color:#ec1d22; text-decoration:none}
     .main-popular .main-mini:nth-child(5n-1) {width:338px}
     .main-popular-articles .main-mini {width:50% !important; padding-top:50px !important}
     .main-popular-articles .main-mini:nth-child(3n-2) {width:100% !important}
+    .main-popular-articles .main-mini .main-mini-photo {height:140px}
+    .main-popular-articles .main-mini .main-mini-photo img {height:140px}
+    .main-popular-articles .main-mini:nth-child(3n-2) .main-mini-photo {height:auto}
+    .main-popular-articles .main-mini:nth-child(3n-2) .main-mini-photo img {height:auto; width:100%; left:auto; transform:none}
     .main-mini-date-mobile {display:inline-block; vertical-align:top; height:22px; margin:23px 0 0 10px; font-size:12px; font-weight:normal; color:#999; letter-spacing:0; line-height:22px}
     .main-popular .main-mini-anonce {display:block}
 }
