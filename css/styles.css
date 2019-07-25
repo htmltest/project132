@@ -504,6 +504,8 @@ nav ul li a:hover {color:#ec1d22; text-decoration:none}
 @media (max-width:1159px) {
     .main-mini-list {padding:33px 0 0 0}
     .main-popular-articles .main-mini-list {padding:0}
+    .main-mini-photo {height:230px; overflow:hidden}
+    .main-mini-photo img {height:230px; position:relative; width:auto; max-width:none; left:50%; transform:translateX(-50%)}
     .main-mini-type {margin:23px 0 0 0}
     .main-mini-title {font-size:16px; line-height:21px}
     .main-mini-anonce {display:none}

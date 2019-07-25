@@ -15,6 +15,26 @@ $(document).ready(function() {
         axis: 'x'
     });
 
+    $('.main-popular .main-popular-content').each(function() {
+        var curBlock = $(this);
+        var curBig = curBlock.find('.main-big');
+        if (curBig.length == 1) {
+            curBlock.find('.main-mini-list').prepend('<div class="main-mini main-mini-mobile">' +
+                                                        '<a href="' + curBig.find('a').attr('href') + '">' +
+                                                            '<div class="main-mini-photo"><img src="' + curBig.find('.main-big-photo img').attr('src') + '" alt="" /></div>' +
+                                                            '<div class="main-mini-type">' + curBig.find('.main-big-type').html() + '</div>' +
+                                                            '<div class="main-mini-date-mobile">' + curBig.find('.main-big-date-mobile').html() + '</div>' +
+                                                            '<div class="main-mini-title">' + curBig.find('.main-big-title').html() + '</div>' +
+                                                            '<div class="main-mini-anonce">' + curBig.find('.main-big-anonce').html() + '</div>' +
+                                                            '<div class="main-mini-info">' +
+                                                                '<div class="main-mini-info-date">' + curBig.find('.main-big-info-date').html() + '</div>' +
+                                                                '<div class="main-mini-info-view">' + curBig.find('.main-big-info-view').html() + '</div>' +
+                                                            '</div>' +
+                                                        '</a>' +
+                                                    '</div>');
+        }
+    });
+
     $('body').on('click', '.main-news-more .btn', function(e) {
         var curLink = $(this);
         if (!curLink.hasClass('loading')) {
