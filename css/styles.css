@@ -641,6 +641,10 @@ nav ul li a:hover {color:#ec1d22; text-decoration:none}
 @media (max-width:1159px) {
     .banner-side {height:auto !important; top:auto !important; position:relative !important; left:auto !important; width:400px; margin:0 auto}
     .banner-side img {display:block; width:100%}
+
+    .banner-side-inter {position:relative !important; height:100vh !important}
+    .banner-side-inter .banner-side-wrap {position:absolute; width:100%; height:100vh; clip:rect(0px 400px 100vh 0px); overflow:hidden}
+    .banner-side-inter .banner-side-inner {position:fixed; height:100%; top:0; left:0; width:100%; backface-visibility:hidden}
 }
 
 .side-link-adv {text-align:center; margin:15px 0 0 0; font-size:14px; line-height:18px}
