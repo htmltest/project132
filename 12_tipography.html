@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="js/slick/slick.css" />
         <link rel="stylesheet" href="js/mcustomscrollbar/jquery.mCustomScrollbar.css" />
 
+        <link rel="stylesheet" href="css/print.css" media="print" />
+
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
         <meta name="viewport" content="width=device-width" />
@@ -30,7 +32,7 @@
                 <div class="header-inner">
                     <div class="container">
                         <div class="header-top">
-                            <div class="logo"><a href="#"></a></div>
+                            <div class="logo"><a href="#"><img src="images/logo-print.png" alt="" /></a></div>
 
                             <div class="header-title">О моде для профессионалов</div>
 
@@ -49,21 +51,79 @@
                             </div>
 
                             <div class="header-lang">
-                                <a href="#">En</a>
-                                <a href="#">It</a>
-                                <a href="#">Fr</a>
+                                <div data-google-lang="ru" class="active">Ru</div>
+                                <div data-google-lang="en" class="">En</div>
+                                <div data-google-lang="it" class="">It</div>
+                                <div data-google-lang="fr" class="">Fr</div>
+                            </div>
+
+                            <div class="header-print">
+                                <div class="header-print-phone">+7 (495) 128-30-20</div>
+                                <div class="header-print-email">info@profashion.ru</div>
                             </div>
                         </div>
 
                         <nav>
                             <ul>
-                                <li><a href="#">Бизнес</a></li>
-                                <li><a href="#">Мода</a></li>
-                                <li><a href="#">Производство</a></li>
-                                <li><a href="#">События</a></li>
+                                <li>
+                                    <a href="#">Бизнес</a>
+                                    <ul>
+                                        <li><a href="#">Маркетинг</a></li>
+                                        <li><a href="#">Право</a></li>
+                                        <li><a href="#">Карьера</a></li>
+                                        <li><a href="#">Власть</a></li>
+                                        <li><a href="#">Sustainability</a></li>
+                                        <li><a href="#">Digital</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Мода</a>
+                                    <ul>
+                                        <li><a href="#">Дизайн</a></li>
+                                        <li><a href="#">Тенденции</a></li>
+                                        <li><a href="#">Персоны</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Производство</a>
+                                    <ul>
+                                        <li><a href="#">Продукты</a></li>
+                                        <li><a href="#">Индустрия</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">События</a>
+                                    <ul>
+                                        <li><a href="#">Показы</a></li>
+                                        <li><a href="#">Выставки</a></li>
+                                        <li><a href="#">Конференции</a></li>
+                                        <li><a href="#">Образование</a></li>
+                                        <li><a href="#">Inspiration</a></li>
+                                        <li><a href="#">Конкурсы</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#">Kids</a></li>
-                                <li><a href="#">Навигатор</a></li>
-                                <li><a href="#">Журналы</a></li>
+                                <li>
+                                    <a href="#">Навигатор</a>
+                                    <ul>
+                                        <li><a href="#">Календарь индустрии моды</a></li>
+                                        <li><a href="#">Бренды</a></li>
+                                        <li><a href="#">Шоу-румы</a></li>
+                                        <li><a href="#">Франчайзинг</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Журналы</a>
+                                    <ul>
+                                        <li><a href="#">PROfashion magazine</a></li>
+                                        <li><a href="#">PROfashion Навигатор</a></li>
+                                        <li><a href="#">PROfashion Свободный склад</a></li>
+                                        <li><a href="#">PROfashion Гид по верхней одежде и мехам</a></li>
+                                        <li><a href="#">CPM & PROfashion</a></li>
+                                        <li><a href="#">PROfashion Спецпроекты</a></li>
+                                        <li><a href="#">KIDS catalogue</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                             <a href="#" class="nav-tag">#Bee-together</a>
                         </nav>
@@ -158,7 +218,7 @@
                             <div class="menu-bottom">
                                 <div class="menu-subscribe">
                                     <div class="menu-subscribe-title">Все актуальные новости fashion-индустрии раз в неделю</div>
-                                    <form action="#" method="post">
+                                    <form action="windows/subscribe.html" method="post" class="ajax-form">
                                         <div class="menu-subscribe-input"><input type="text" name="email" value="" placeholder="Ваш адрес электронной почты" class="required email" /></div>
                                         <div class="menu-subscribe-submit"><input type="submit" value="Подписаться" /></div>
                                     </form>
@@ -184,6 +244,11 @@
                     <div class="article-content">
                         <h1>H1 Почему гендиректор российского Metro Cash & Carry досрочно покидает пост</h1>
                         <p>Американец Джери Калмис досрочно покидает пост гендиректора российского подразделения ретейлера Metro Cash & Carry (часть немецкой Metro Group), сообщил Forbes источник, близкий к компании, <a href="#">и подтвердили представитель компании</a> и сам Калмис. С 1 июня в должность вступит Мартин Шумахер, который с 2013-го работал в составе антикризисной группы Metro Cash & Carry в Украине, а с 2016-го возглавлял украинское подразделение. Полгода назад он перебрался в Россию на позицию директора по маркетингу. Почему смена руководителя российского подразделения случилась на полгода раньше срока окончания контракта Калмиса</p>
+                        <p style="text-align: justify;">
+                         <b>Присутствующие на российском рынке ритейлеры немецких брендов пережили уже многое, от изменений вкусов потребителей до регулярных скачков курса после закупок. Последний сложный период, связанный с резким падением рубля, уже позади. И несмотря на то, что стоимость евро все еще высока, многие компании успешно адаптировались к текущим условиям.</b><br>
+                         <br>
+                         <img width="315" alt="germany-2-2.jpg" src="files/4d8e67dc88c5121ee3a1d3eb7fd27b37.jpg" height="414" title="Dirk Bikkembergs" align="right" class="right_img">В апреле этого года стало известно о парадоксальной ситуации. Российско-германская внешнеторговая палата (ВТП) подсчитала, что в 2018 году инвестиции немецкого бизнеса в Россию достигли максимума за 10 лет и оказались рекордными за весь период финансового кризиса после 2008-го. В то же время число немецких фирм, работающих в России, за 10 лет уменьшилось с более чем 6000 до примерно 4500 компаний. Иными словами, денег стало больше, а компаний – меньше.
+                        </p>
                         <h2>H2 Вакцина для Metro</h2>
                         <p>Американец Джери Калмис досрочно покидает пост гендиректора российского подразделения ретейлера Metro Cash & Carry (часть немецкой Metro Group), сообщил Forbes источник, близкий к компании, <a href="#">и подтвердили представитель компании</a> и сам Калмис. С 1 июня в должность вступит Мартин Шумахер, который с 2013-го работал в составе антикризисной группы Metro Cash & Carry в Украине, а с 2016-го возглавлял украинское подразделение. Полгода назад он перебрался в Россию на позицию директора по маркетингу. Почему смена руководителя российского подразделения случилась на полгода раньше срока окончания контракта Калмиса</p>
                         <ol>
@@ -439,7 +504,7 @@
                 <div class="container">
                     <div class="footer-subscribe">
                         <div class="footer-subscribe-title">Все актуальные новости fashion-индустрии раз в неделю</div>
-                        <form action="#" method="post">
+                        <form action="windows/subscribe.html" method="post" class="ajax-form">
                             <div class="footer-subscribe-input"><input type="text" name="email" value="" placeholder="Ваш адрес электронной почты" class="required email" /></div>
                             <div class="footer-subscribe-submit"><input type="submit" value="Подписаться" /></div>
                         </form>
@@ -496,9 +561,16 @@
                         </div>
                         <div class="footer-developer">Создание сайта - <a href="http://bilingo.ru" target="_blank">Bilingo.ru</a></div>
                         <div class="footer-age"><div class="footer-age-inner">16+</div></div>
+
+                        <div class="footer-print">
+                            <div class="footer-print-phone">+7 (495) 128-30-20</div>
+                            <div class="footer-print-email">info@profashion.ru</div>
+                        </div>
                     </div>
                 </div>
             </footer>
+
+            <a href="#" class="up-link"></a>
 
         </div>
         <!-- wrapper END -->
@@ -511,7 +583,9 @@
         <script src="js/chosen/chosen.jquery.min.js"></script>
         <script src="js/slick/slick.min.js"></script>
         <script src="js/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
         <script src="js/tools.js"></script>
+        <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
 
     </body>
 </html>

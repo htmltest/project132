@@ -1,0 +1,52 @@
+<div class="window-inner">
+    <div class="window-title">ПОДПИСКА НА РАССЫЛКУ</div>
+    <div class="window-text">
+        <p>Благодарим Вас за подписку на новости сайта PROfashion. Чтобы завершить ее, заполните форму ниже и нажмите "Подписаться". Отписаться вы сможете в любое время.</p>
+    </div>
+    <div class="window-form">
+        <form action="windows/subscribe-success.html" method="post" class="ajax-form">
+            <div class="form-field">
+                <div class="form-label">Имя<span>*</span></div>
+                <div class="form-input"><input type="text" name="name" value="" class="required" /></div>
+            </div>
+
+            <div class="form-field">
+                <div class="form-label">E-mail<span>*</span></div>
+                <div class="form-input"><input type="text" name="email" value="Ivan@mail.com" class="required email" /></div>
+            </div>
+
+            <div class="form-field">
+                <div class="form-label">Город<span>*</span></div>
+                <div class="form-input"><input type="text" name="city" value="" class="required" /></div>
+            </div>
+
+            <div class="form-field">
+                <div class="form-label">Сфера деятельности (можно выбрать несколько вариантов)</div>
+                <div class="form-checkbox"><label><input type="checkbox" name="activity1" /><span>Производство</span></label></div>
+                <div class="form-checkbox"><label><input type="checkbox" name="activity2" /><span>Дизайн</span></label></div>
+                <div class="form-checkbox"><label><input type="checkbox" name="activity3" /><span>Ткани, фурнитура, комплектующие</span></label></div>
+                <div class="form-checkbox"><label><input type="checkbox" name="activity4" /><span>Дистрибуция и оптовая торговля</span></label></div>
+                <div class="form-checkbox"><label><input type="checkbox" name="activity5" /><span>Розничная торговля</span></label></div>
+                <div class="form-checkbox"><label><input type="checkbox" name="activity6" /><span>E-commerce (интернет-торговля)</span></label></div>
+                <div class="form-checkbox"><label><input type="checkbox" name="activity7" /><span>Логистика, склад, ВЭД</span></label></div>
+                <div class="form-checkbox"><label><input type="checkbox" name="activity8" /><span>Консалтинг, аудит, образование</span></label></div>
+                <div class="form-checkbox"><label><input type="checkbox" name="activity9" /><span>Выставочная деятельность</span></label></div>
+                <div class="form-checkbox"><label><input type="checkbox" name="activity10" /><span>Финансы, банки</span></label></div>
+                <div class="form-checkbox"><label><input type="checkbox" name="activity11" /><span>СМИ</span></label></div>
+                <div class="form-checkbox"><label><input type="checkbox" name="activity12" /><span>Гос. учреждения, союзы, ассоциации</span></label></div>
+                <div class="form-checkbox"><label><input type="checkbox" name="activity_other" id="activity-other" /><span>Другое</span></label></div>
+                <div class="form-input" id="activity-other-text"><textarea name="activity_other" rows="5" cols="10" placeholder="Введите ваш сферу деятельности, если её нет в списке выше"></textarea></div>
+            </div>
+
+            <div class="form-field window-policy-checkbox">
+                <div class="form-checkbox"><label><input type="checkbox" name="policy" class="required" checked="checked" /><span>Я согласен (-на) с условиями <a href="#">пользовательского соглашения</a></span></label></div>
+            </div>
+
+            <div class="window-ctrl">
+                <div class="form-submit"><input type="submit" value="Подписаться" class="btn" /></div>
+            </div>
+
+            <div class="window-policy-error">Пожалуйста, подтвердите свое согласие на обработку персональных данных</div>
+        </form>
+    </div>
+</div>

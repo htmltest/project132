@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="js/slick/slick.css" />
         <link rel="stylesheet" href="js/mcustomscrollbar/jquery.mCustomScrollbar.css" />
 
+        <link rel="stylesheet" href="css/print.css" media="print" />
+
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
         <meta name="viewport" content="width=device-width" />
@@ -30,7 +32,7 @@
                 <div class="header-inner">
                     <div class="container">
                         <div class="header-top">
-                            <div class="logo"></div>
+                            <div class="logo"><img src="images/logo-print.png" alt="" /></div>
 
                             <div class="header-title">О моде для профессионалов</div>
 
@@ -49,21 +51,79 @@
                             </div>
 
                             <div class="header-lang">
-                                <a href="#">En</a>
-                                <a href="#">It</a>
-                                <a href="#">Fr</a>
+                                <div data-google-lang="ru" class="active">Ru</div>
+                                <div data-google-lang="en" class="">En</div>
+                                <div data-google-lang="it" class="">It</div>
+                                <div data-google-lang="fr" class="">Fr</div>
+                            </div>
+
+                            <div class="header-print">
+                                <div class="header-print-phone">+7 (495) 128-30-20</div>
+                                <div class="header-print-email">info@profashion.ru</div>
                             </div>
                         </div>
 
                         <nav>
                             <ul>
-                                <li><a href="#">Бизнес</a></li>
-                                <li><a href="#">Мода</a></li>
-                                <li><a href="#">Производство</a></li>
-                                <li><a href="#">События</a></li>
+                                <li>
+                                    <a href="#">Бизнес</a>
+                                    <ul>
+                                        <li><a href="#">Маркетинг</a></li>
+                                        <li><a href="#">Право</a></li>
+                                        <li><a href="#">Карьера</a></li>
+                                        <li><a href="#">Власть</a></li>
+                                        <li><a href="#">Sustainability</a></li>
+                                        <li><a href="#">Digital</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Мода</a>
+                                    <ul>
+                                        <li><a href="#">Дизайн</a></li>
+                                        <li><a href="#">Тенденции</a></li>
+                                        <li><a href="#">Персоны</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Производство</a>
+                                    <ul>
+                                        <li><a href="#">Продукты</a></li>
+                                        <li><a href="#">Индустрия</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">События</a>
+                                    <ul>
+                                        <li><a href="#">Показы</a></li>
+                                        <li><a href="#">Выставки</a></li>
+                                        <li><a href="#">Конференции</a></li>
+                                        <li><a href="#">Образование</a></li>
+                                        <li><a href="#">Inspiration</a></li>
+                                        <li><a href="#">Конкурсы</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#">Kids</a></li>
-                                <li><a href="#">Навигатор</a></li>
-                                <li><a href="#">Журналы</a></li>
+                                <li>
+                                    <a href="#">Навигатор</a>
+                                    <ul>
+                                        <li><a href="#">Календарь индустрии моды</a></li>
+                                        <li><a href="#">Бренды</a></li>
+                                        <li><a href="#">Шоу-румы</a></li>
+                                        <li><a href="#">Франчайзинг</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Журналы</a>
+                                    <ul>
+                                        <li><a href="#">PROfashion magazine</a></li>
+                                        <li><a href="#">PROfashion Навигатор</a></li>
+                                        <li><a href="#">PROfashion Свободный склад</a></li>
+                                        <li><a href="#">PROfashion Гид по верхней одежде и мехам</a></li>
+                                        <li><a href="#">CPM & PROfashion</a></li>
+                                        <li><a href="#">PROfashion Спецпроекты</a></li>
+                                        <li><a href="#">KIDS catalogue</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                             <a href="#" class="nav-tag">#Bee-together</a>
                         </nav>
@@ -158,7 +218,7 @@
                             <div class="menu-bottom">
                                 <div class="menu-subscribe">
                                     <div class="menu-subscribe-title">Все актуальные новости fashion-индустрии раз в неделю</div>
-                                    <form action="#" method="post">
+                                    <form action="windows/subscribe.html" method="post" class="ajax-form">
                                         <div class="menu-subscribe-input"><input type="text" name="email" value="" placeholder="Ваш адрес электронной почты" class="required email" /></div>
                                         <div class="menu-subscribe-submit"><input type="submit" value="Подписаться" /></div>
                                     </form>
@@ -187,11 +247,11 @@
                                 <div class="main-big-photo"><img src="files/main-big.jpg" alt="" /></div>
                                 <div class="main-big-content">
                                     <div class="main-big-type">бизнес / ритейл</div>
-                                    <div class="main-big-date-mobile">21 мая 12:30</div>
+                                    <div class="main-big-date-mobile">21 мая 2019 г. 12:30</div>
                                     <div class="main-big-title">Jacquemus отпразднует юбилей в Провансе</div>
                                     <div class="main-big-anonce">Анонс избранной статьи, пусть он занимает только одну строку</div>
                                     <div class="main-big-info">
-                                        <div class="main-big-info-date">21 мая 12:30</div>
+                                        <div class="main-big-info-date">21 мая 2019 г. 12:30</div>
                                         <div class="main-big-info-view">4 567</div>
                                     </div>
                                 </div>
@@ -205,7 +265,7 @@
                                     <div class="main-mini-title">Рынок роскоши вырастет на 4-6% в текущем году</div>
                                     <div class="main-mini-anonce">Канадский бренд верхней одежды Moose Knuckles планирует развиваться на российском рынке</div>
                                     <div class="main-mini-info">
-                                        <div class="main-mini-info-date">21 мая 12:30</div>
+                                        <div class="main-mini-info-date">21 мая 2019 г. 12:30</div>
                                         <div class="main-mini-info-view">4 567</div>
                                     </div>
                                 </a>
@@ -218,7 +278,7 @@
                                     <div class="main-mini-title">H&M будет развиваться в Казахстане</div>
                                     <div class="main-mini-anonce">Шведский ритейлер H&M будет развивать свою розничную сеть в Казахстане и планирует открытие локального интернет-магазина.</div>
                                     <div class="main-mini-info">
-                                        <div class="main-mini-info-date">21 мая 12:30</div>
+                                        <div class="main-mini-info-date">21 мая 2019 г. 12:30</div>
                                         <div class="main-mini-info-view">4 567</div>
                                     </div>
                                 </a>
@@ -230,7 +290,7 @@
 
                         <div class="main-subscribe">
                             <div class="main-subscribe-title">Все актуальные новости fashion-индустрии раз в&nbsp;неделю</div>
-                            <form action="#" method="post">
+                            <form action="windows/subscribe.html" method="post" class="ajax-form">
                                 <div class="main-subscribe-input"><input type="text" name="email" value="" placeholder="Ваш e-mail" class="required email" /></div>
                                 <div class="main-subscribe-submit"><input type="submit" value="Подписаться" /></div>
                             </form>
@@ -252,7 +312,7 @@
 
                 <!-- main news -->
                 <div class="main-news">
-                    <div class="main-news-title">Новое на сайте</div>
+                    <h2 class="main-news-title">Новое на сайте</h2>
                     <div class="main-news-container">
                         <div class="main-news-content">
                             <div class="main-news-list">
@@ -262,7 +322,7 @@
                                         <div class="main-news-item-container">
                                             <div class="main-news-item-header">
                                                 <div class="main-news-item-type">бизнес / ритейл</div>
-                                                <div class="main-news-item-date">21 мая 12:30</div>
+                                                <div class="main-news-item-date">21 мая 2019 г. 12:30</div>
                                             </div>
                                             <div class="main-news-item-title">У «AliExpress Россия» будет два гендиректора</div>
                                             <div class="main-news-item-anonce">Генеральными содиректорами нового совместного предприятия станут глава AliExpress в России Лю Вэй и первый заместитель гендиректора Mail.ru Group Дмитрий Сергеев.</div>
@@ -277,7 +337,7 @@
                                         <div class="main-news-item-container">
                                             <div class="main-news-item-header">
                                                 <div class="main-news-item-type">бизнес / ритейл</div>
-                                                <div class="main-news-item-date">21 мая 12:30</div>
+                                                <div class="main-news-item-date">21 мая 2019 г. 12:30</div>
                                             </div>
                                             <div class="main-news-item-title">Jacquemus отпразднует юбилей в Провансе</div>
                                             <div class="main-news-item-anonce">20-21 июня в оранжерее МГУ «Аптекарский огород» состоится неделя благопристойной моды Russia.Modest Fashion Week.</div>
@@ -292,7 +352,7 @@
                                         <div class="main-news-item-container">
                                             <div class="main-news-item-header">
                                                 <div class="main-news-item-type">бизнес / ритейл</div>
-                                                <div class="main-news-item-date">21 мая 12:30</div>
+                                                <div class="main-news-item-date">21 мая 2019 г. 12:30</div>
                                             </div>
                                             <div class="main-news-item-title">В Астрахани завершился девятый сезон Каспийской недели моды</div>
                                             <div class="main-news-item-anonce">Генеральными содиректорами нового совместного предприятия станут глава AliExpress в России Лю Вэй и первый заместитель гендиректора Mail.ru Group Дмитрий Сергеев.</div>
@@ -307,7 +367,7 @@
                                         <div class="main-news-item-container">
                                             <div class="main-news-item-header">
                                                 <div class="main-news-item-type">бизнес / ритейл</div>
-                                                <div class="main-news-item-date">21 мая 12:30</div>
+                                                <div class="main-news-item-date">21 мая 2019 г. 12:30</div>
                                             </div>
                                             <div class="main-news-item-title">Делегация ЮНИДО посетила фабрику Solstudio Industry</div>
                                             <div class="main-news-item-anonce">До 2025 года прогнозируется рост около 3-5%. Ключевыми факторами роста называются повышенный спрос в Китае, в первую очередь со стороны молодежи, туризм в Европе, цифровизация рынка.</div>
@@ -322,7 +382,7 @@
                                         <div class="main-news-item-container">
                                             <div class="main-news-item-header">
                                                 <div class="main-news-item-type">бизнес / ритейл</div>
-                                                <div class="main-news-item-date">21 мая 12:30</div>
+                                                <div class="main-news-item-date">21 мая 2019 г. 12:30</div>
                                             </div>
                                             <div class="main-news-item-title">Ведущие эксперты e-commerce проведут курс обучения для топ-менеджеров</div>
                                             <div class="main-news-item-anonce">Компания проводит конкурс на лучшего продавца бренда, развивается в Instagram и организует для клиентов бизнес-завтраки с участием ведущих стилистов.</div>
@@ -348,7 +408,7 @@
                             <div class="main-news-mobile">
                                 <div class="main-subscribe">
                                     <div class="main-subscribe-title">Все актуальные новости fashion-индустрии раз в&nbsp;неделю</div>
-                                    <form action="#" method="post">
+                                    <form action="windows/subscribe.html" method="post" class="ajax-form">
                                         <div class="main-subscribe-input"><input type="text" name="email" value="" placeholder="Ваш e-mail" class="required email" /></div>
                                         <div class="main-subscribe-submit"><input type="submit" value="Подписаться" /></div>
                                     </form>
@@ -372,16 +432,16 @@
                 <!-- main news companies -->
                 <div class="main-news-companies">
                     <div class="main-news-companies-content">
-                        <div class="main-news-title">Новости компаний</div>
+                        <h2 class="main-news-title">Новости компаний</h2>
                         <div class="main-news-companies-list">
-                            <div class="main-news-companies-item selected"><a href="#">Bikkembergs объявил о реструктуризации</a> <span>21 мая 12:30</span></div>
-                            <div class="main-news-companies-item selected"><a href="#">Английский бренд Minoti приглашает к сотрудничеству российских байеров</a> <span>21 мая 12:30</span></div>
-                            <div class="main-news-companies-item selected"><a href="#">В Петербурге создадут Ассоциацию арендаторов и собственников стрит-ритейла</a> <span>21 мая 12:30</span></div>
-                            <div class="main-news-companies-item selected"><a href="#">Владельцы Chanel инвестируют в исландского производителя</a> <span>21 мая 12:30</span></div>
-                            <div class="main-news-companies-item"><a href="#">Английский бренд Minoti приглашает к сотрудничеству российских байеров</a> <span>21 мая 12:30</span></div>
-                            <div class="main-news-companies-item"><a href="#">В Петербурге создадут Ассоциацию арендаторов и собственников стрит-ритейла</a> <span>21 мая 12:30</span></div>
-                            <div class="main-news-companies-item"><a href="#">Владельцы Chanel инвестируют в исландского производителя</a> <span>21 мая 12:30</span></div>
-                            <div class="main-news-companies-item"><a href="#">Moose Knuckles видит потенциал в России</a> <span>21 мая 12:30</span></div>
+                            <div class="main-news-companies-item selected"><a href="#">Bikkembergs объявил о реструктуризации</a> <span>21 мая 2019 г. 12:30</span></div>
+                            <div class="main-news-companies-item selected"><a href="#">Английский бренд Minoti приглашает к сотрудничеству российских байеров</a> <span>21 мая 2019 г. 12:30</span></div>
+                            <div class="main-news-companies-item selected"><a href="#">В Петербурге создадут Ассоциацию арендаторов и собственников стрит-ритейла</a> <span>21 мая 2019 г. 12:30</span></div>
+                            <div class="main-news-companies-item selected"><a href="#">Владельцы Chanel инвестируют в исландского производителя</a> <span>21 мая 2019 г. 12:30</span></div>
+                            <div class="main-news-companies-item"><a href="#">Английский бренд Minoti приглашает к сотрудничеству российских байеров</a> <span>21 мая 2019 г. 12:30</span></div>
+                            <div class="main-news-companies-item"><a href="#">В Петербурге создадут Ассоциацию арендаторов и собственников стрит-ритейла</a> <span>21 мая 2019 г. 12:30</span></div>
+                            <div class="main-news-companies-item"><a href="#">Владельцы Chanel инвестируют в исландского производителя</a> <span>21 мая 2019 г. 12:30</span></div>
+                            <div class="main-news-companies-item"><a href="#">Moose Knuckles видит потенциал в России</a> <span>21 мая 2019 г. 12:30</span></div>
                         </div>
 
                         <div class="main-news-companies-more">
@@ -393,7 +453,7 @@
 
                 <!-- main popular -->
                 <div class="main-popular">
-                    <div class="main-news-title">Популярное</div>
+                    <h2 class="main-news-title">Популярное</h2>
                     <div class="main-popular-container">
                         <div class="main-popular-content">
                             <div class="main-big">
@@ -401,11 +461,11 @@
                                     <div class="main-big-photo"><img src="files/main-popular-1.jpg" alt="" /></div>
                                     <div class="main-big-content">
                                         <div class="main-big-type">бизнес / ритейл</div>
-                                        <div class="main-big-date-mobile">21 мая 12:30</div>
+                                        <div class="main-big-date-mobile">21 мая 2019 г. 12:30</div>
                                         <div class="main-big-title">Bikkembergs объявил о реструктуризации</div>
                                         <div class="main-big-anonce">Анонс избранной статьи, пусть он занимает только одну строку</div>
                                         <div class="main-big-info">
-                                            <div class="main-big-info-date">21 мая 12:30</div>
+                                            <div class="main-big-info-date">21 мая 2019 г. 12:30</div>
                                             <div class="main-big-info-view">4 567</div>
                                         </div>
                                     </div>
@@ -416,11 +476,11 @@
                                     <a href="#">
                                         <div class="main-mini-photo"><img src="files/main-news-3.jpg" alt="" /></div>
                                         <div class="main-mini-type">бизнес / ритейл</div>
-                                        <div class="main-mini-date-mobile">21 мая 12:30</div>
+                                        <div class="main-mini-date-mobile">21 мая 2019 г. 12:30</div>
                                         <div class="main-mini-title">Moose Knuckles видит потенциал в России</div>
                                         <div class="main-mini-anonce">В ближайшие годы мировой рынок предметов роскоши сохранит темпы роста, начатые в 2017 году.</div>
                                         <div class="main-mini-info">
-                                            <div class="main-mini-info-date">21 мая 12:30</div>
+                                            <div class="main-mini-info-date">21 мая 2019 г. 12:30</div>
                                             <div class="main-mini-info-view">4 567</div>
                                         </div>
                                     </a>
@@ -430,11 +490,11 @@
                                     <a href="#">
                                         <div class="main-mini-photo"><img src="files/main-news-4.jpg" alt="" /></div>
                                         <div class="main-mini-type">бизнес / ритейл</div>
-                                        <div class="main-mini-date-mobile">21 мая 12:30</div>
+                                        <div class="main-mini-date-mobile">21 мая 2019 г. 12:30</div>
                                         <div class="main-mini-title">Кредиторы одобрили план по спасению владельца Topshop</div>
                                         <div class="main-mini-anonce">Канадский бренд верхней одежды Moose Knuckles планирует развиваться на российском рынке.</div>
                                         <div class="main-mini-info">
-                                            <div class="main-mini-info-date">21 мая 12:30</div>
+                                            <div class="main-mini-info-date">21 мая 2019 г. 12:30</div>
                                             <div class="main-mini-info-view">4 567</div>
                                         </div>
                                     </a>
@@ -444,11 +504,11 @@
                                     <a href="#">
                                         <div class="main-mini-photo"><img src="files/main-news-2.jpg" alt="" /></div>
                                         <div class="main-mini-type">Производство / индустрия</div>
-                                        <div class="main-mini-date-mobile">21 мая 12:30</div>
+                                        <div class="main-mini-date-mobile">21 мая 2019 г. 12:30</div>
                                         <div class="main-mini-title">Jacquemus отпразднует юбилей в Провансе</div>
                                         <div class="main-mini-anonce">В ближайшие годы мировой рынок предметов роскоши сохранит темпы роста, начатые в 2017 году.</div>
                                         <div class="main-mini-info">
-                                            <div class="main-mini-info-date">21 мая 12:30</div>
+                                            <div class="main-mini-info-date">21 мая 2019 г. 12:30</div>
                                             <div class="main-mini-info-view">4 567</div>
                                         </div>
                                     </a>
@@ -458,11 +518,11 @@
                                     <a href="#">
                                         <div class="main-mini-photo"><img src="files/main-mini-1.jpg" alt="" /></div>
                                         <div class="main-mini-type">Производство / индустрия</div>
-                                        <div class="main-mini-date-mobile">21 мая 12:30</div>
+                                        <div class="main-mini-date-mobile">21 мая 2019 г. 12:30</div>
                                         <div class="main-mini-title">Рынок роскоши вырастет на 4-6% в текущем году</div>
                                         <div class="main-mini-anonce">Канадский бренд верхней одежды Moose Knuckles планирует развиваться на российском рынке</div>
                                         <div class="main-mini-info">
-                                            <div class="main-mini-info-date">21 мая 12:30</div>
+                                            <div class="main-mini-info-date">21 мая 2019 г. 12:30</div>
                                             <div class="main-mini-info-view">4 567</div>
                                         </div>
                                     </a>
@@ -472,11 +532,11 @@
                                     <a href="#">
                                         <div class="main-mini-photo"><img src="files/main-mini-2.jpg" alt="" /></div>
                                         <div class="main-mini-type">бизнес / ритейл</div>
-                                        <div class="main-mini-date-mobile">21 мая 12:30</div>
+                                        <div class="main-mini-date-mobile">21 мая 2019 г. 12:30</div>
                                         <div class="main-mini-title">H&M будет развиваться в Казахстане</div>
                                         <div class="main-mini-anonce">Шведский ритейлер H&M будет развивать свою розничную сеть в Казахстане и планирует открытие локального интернет-магазина.</div>
                                         <div class="main-mini-info">
-                                            <div class="main-mini-info-date">21 мая 12:30</div>
+                                            <div class="main-mini-info-date">21 мая 2019 г. 12:30</div>
                                             <div class="main-mini-info-view">4 567</div>
                                         </div>
                                     </a>
@@ -486,11 +546,11 @@
                                     <a href="#">
                                         <div class="main-mini-photo"><img src="files/main-news-3.jpg" alt="" /></div>
                                         <div class="main-mini-type">бизнес / ритейл</div>
-                                        <div class="main-mini-date-mobile">21 мая 12:30</div>
+                                        <div class="main-mini-date-mobile">21 мая 2019 г. 12:30</div>
                                         <div class="main-mini-title">Moose Knuckles видит потенциал в России</div>
                                         <div class="main-mini-anonce">В ближайшие годы мировой рынок предметов роскоши сохранит темпы роста, начатые в 2017 году.</div>
                                         <div class="main-mini-info">
-                                            <div class="main-mini-info-date">21 мая 12:30</div>
+                                            <div class="main-mini-info-date">21 мая 2019 г. 12:30</div>
                                             <div class="main-mini-info-view">4 567</div>
                                         </div>
                                     </a>
@@ -500,11 +560,11 @@
                                     <a href="#">
                                         <div class="main-mini-photo"><img src="files/main-news-4.jpg" alt="" /></div>
                                         <div class="main-mini-type">бизнес / ритейл</div>
-                                        <div class="main-mini-date-mobile">21 мая 12:30</div>
+                                        <div class="main-mini-date-mobile">21 мая 2019 г. 12:30</div>
                                         <div class="main-mini-title">Кредиторы одобрили план по спасению владельца Topshop</div>
                                         <div class="main-mini-anonce">Канадский бренд верхней одежды Moose Knuckles планирует развиваться на российском рынке.</div>
                                         <div class="main-mini-info">
-                                            <div class="main-mini-info-date">21 мая 12:30</div>
+                                            <div class="main-mini-info-date">21 мая 2019 г. 12:30</div>
                                             <div class="main-mini-info-view">4 567</div>
                                         </div>
                                     </a>
@@ -514,11 +574,11 @@
                                     <a href="#">
                                         <div class="main-mini-photo"><img src="files/main-news-2.jpg" alt="" /></div>
                                         <div class="main-mini-type">Производство / индустрия</div>
-                                        <div class="main-mini-date-mobile">21 мая 12:30</div>
+                                        <div class="main-mini-date-mobile">21 мая 2019 г. 12:30</div>
                                         <div class="main-mini-title">Jacquemus отпразднует юбилей в Провансе</div>
                                         <div class="main-mini-anonce">В ближайшие годы мировой рынок предметов роскоши сохранит темпы роста, начатые в 2017 году.</div>
                                         <div class="main-mini-info">
-                                            <div class="main-mini-info-date">21 мая 12:30</div>
+                                            <div class="main-mini-info-date">21 мая 2019 г. 12:30</div>
                                             <div class="main-mini-info-view">4 567</div>
                                         </div>
                                     </a>
@@ -528,11 +588,11 @@
                                     <a href="#">
                                         <div class="main-mini-photo"><img src="files/main-mini-1.jpg" alt="" /></div>
                                         <div class="main-mini-type">Производство / индустрия</div>
-                                        <div class="main-mini-date-mobile">21 мая 12:30</div>
+                                        <div class="main-mini-date-mobile">21 мая 2019 г. 12:30</div>
                                         <div class="main-mini-title">Рынок роскоши вырастет на 4-6% в текущем году</div>
                                         <div class="main-mini-anonce">Канадский бренд верхней одежды Moose Knuckles планирует развиваться на российском рынке</div>
                                         <div class="main-mini-info">
-                                            <div class="main-mini-info-date">21 мая 12:30</div>
+                                            <div class="main-mini-info-date">21 мая 2019 г. 12:30</div>
                                             <div class="main-mini-info-view">4 567</div>
                                         </div>
                                     </a>
@@ -542,11 +602,11 @@
                                     <a href="#">
                                         <div class="main-mini-photo"><img src="files/main-mini-2.jpg" alt="" /></div>
                                         <div class="main-mini-type">бизнес / ритейл</div>
-                                        <div class="main-mini-date-mobile">21 мая 12:30</div>
+                                        <div class="main-mini-date-mobile">21 мая 2019 г. 12:30</div>
                                         <div class="main-mini-title">H&M будет развиваться в Казахстане</div>
                                         <div class="main-mini-anonce">Шведский ритейлер H&M будет развивать свою розничную сеть в Казахстане и планирует открытие локального интернет-магазина.</div>
                                         <div class="main-mini-info">
-                                            <div class="main-mini-info-date">21 мая 12:30</div>
+                                            <div class="main-mini-info-date">21 мая 2019 г. 12:30</div>
                                             <div class="main-mini-info-view">4 567</div>
                                         </div>
                                     </a>
@@ -572,7 +632,7 @@
 
                 <!-- main calendar -->
                 <div class="main-calendar">
-                    <div class="main-news-title">Календарь индустрии моды</div>
+                    <h2 class="main-news-title">Календарь индустрии моды</h2>
                     <div class="main-calendar-list">
                         <div class="main-calendar-item">
                             <div class="main-calendar-item-inner">
@@ -659,7 +719,7 @@
 
                 <!-- main navigator -->
                 <div class="main-navigator">
-                    <div class="main-news-title">Навигатор</div>
+                    <h2 class="main-news-title">Навигатор</h2>
                     <div class="main-navigator-list">
                         <div class="main-navigator-item">
                             <a href="#">
@@ -762,7 +822,7 @@
 
                 <!-- main projects -->
                 <div class="main-projects">
-                    <div class="main-news-title">Проекты</div>
+                    <h2 class="main-news-title">Проекты</h2>
                     <div class="main-projects-list">
                         <div class="main-projects-item">
                             <a href="#">
@@ -959,7 +1019,7 @@
                 <div class="container">
                     <div class="footer-subscribe">
                         <div class="footer-subscribe-title">Все актуальные новости fashion-индустрии раз в неделю</div>
-                        <form action="#" method="post">
+                        <form action="windows/subscribe.html" method="post" class="ajax-form">
                             <div class="footer-subscribe-input"><input type="text" name="email" value="" placeholder="Ваш адрес электронной почты" class="required email" /></div>
                             <div class="footer-subscribe-submit"><input type="submit" value="Подписаться" /></div>
                         </form>
@@ -1016,9 +1076,16 @@
                         </div>
                         <div class="footer-developer">Создание сайта - <a href="http://bilingo.ru" target="_blank">Bilingo.ru</a></div>
                         <div class="footer-age"><div class="footer-age-inner">16+</div></div>
+
+                        <div class="footer-print">
+                            <div class="footer-print-phone">+7 (495) 128-30-20</div>
+                            <div class="footer-print-email">info@profashion.ru</div>
+                        </div>
                     </div>
                 </div>
             </footer>
+
+            <a href="#" class="up-link"></a>
 
         </div>
         <!-- wrapper END -->
@@ -1031,7 +1098,9 @@
         <script src="js/chosen/chosen.jquery.min.js"></script>
         <script src="js/slick/slick.min.js"></script>
         <script src="js/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
         <script src="js/tools.js"></script>
+        <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
 
     </body>
 </html>

@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="js/slick/slick.css" />
         <link rel="stylesheet" href="js/mcustomscrollbar/jquery.mCustomScrollbar.css" />
 
+        <link rel="stylesheet" href="css/print.css" media="print" />
+
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
         <meta name="viewport" content="width=device-width" />
@@ -30,7 +32,7 @@
                 <div class="header-inner">
                     <div class="container">
                         <div class="header-top">
-                            <div class="logo"><a href="#"></a></div>
+                            <div class="logo"><a href="#"><img src="images/logo-print.png" alt="" /></a></div>
 
                             <div class="header-title">О моде для профессионалов</div>
 
@@ -49,21 +51,79 @@
                             </div>
 
                             <div class="header-lang">
-                                <a href="#">En</a>
-                                <a href="#">It</a>
-                                <a href="#">Fr</a>
+                                <div data-google-lang="ru" class="active">Ru</div>
+                                <div data-google-lang="en" class="">En</div>
+                                <div data-google-lang="it" class="">It</div>
+                                <div data-google-lang="fr" class="">Fr</div>
+                            </div>
+
+                            <div class="header-print">
+                                <div class="header-print-phone">+7 (495) 128-30-20</div>
+                                <div class="header-print-email">info@profashion.ru</div>
                             </div>
                         </div>
 
                         <nav>
                             <ul>
-                                <li><a href="#">Бизнес</a></li>
-                                <li><a href="#">Мода</a></li>
-                                <li><a href="#">Производство</a></li>
-                                <li><a href="#">События</a></li>
+                                <li>
+                                    <a href="#">Бизнес</a>
+                                    <ul>
+                                        <li><a href="#">Маркетинг</a></li>
+                                        <li><a href="#">Право</a></li>
+                                        <li><a href="#">Карьера</a></li>
+                                        <li><a href="#">Власть</a></li>
+                                        <li><a href="#">Sustainability</a></li>
+                                        <li><a href="#">Digital</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Мода</a>
+                                    <ul>
+                                        <li><a href="#">Дизайн</a></li>
+                                        <li><a href="#">Тенденции</a></li>
+                                        <li><a href="#">Персоны</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Производство</a>
+                                    <ul>
+                                        <li><a href="#">Продукты</a></li>
+                                        <li><a href="#">Индустрия</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">События</a>
+                                    <ul>
+                                        <li><a href="#">Показы</a></li>
+                                        <li><a href="#">Выставки</a></li>
+                                        <li><a href="#">Конференции</a></li>
+                                        <li><a href="#">Образование</a></li>
+                                        <li><a href="#">Inspiration</a></li>
+                                        <li><a href="#">Конкурсы</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#">Kids</a></li>
-                                <li><a href="#">Навигатор</a></li>
-                                <li><a href="#">Журналы</a></li>
+                                <li>
+                                    <a href="#">Навигатор</a>
+                                    <ul>
+                                        <li><a href="#">Календарь индустрии моды</a></li>
+                                        <li><a href="#">Бренды</a></li>
+                                        <li><a href="#">Шоу-румы</a></li>
+                                        <li><a href="#">Франчайзинг</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Журналы</a>
+                                    <ul>
+                                        <li><a href="#">PROfashion magazine</a></li>
+                                        <li><a href="#">PROfashion Навигатор</a></li>
+                                        <li><a href="#">PROfashion Свободный склад</a></li>
+                                        <li><a href="#">PROfashion Гид по верхней одежде и мехам</a></li>
+                                        <li><a href="#">CPM & PROfashion</a></li>
+                                        <li><a href="#">PROfashion Спецпроекты</a></li>
+                                        <li><a href="#">KIDS catalogue</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                             <a href="#" class="nav-tag">#Bee-together</a>
                         </nav>
@@ -158,7 +218,7 @@
                             <div class="menu-bottom">
                                 <div class="menu-subscribe">
                                     <div class="menu-subscribe-title">Все актуальные новости fashion-индустрии раз в неделю</div>
-                                    <form action="#" method="post">
+                                    <form action="windows/subscribe.html" method="post" class="ajax-form">
                                         <div class="menu-subscribe-input"><input type="text" name="email" value="" placeholder="Ваш адрес электронной почты" class="required email" /></div>
                                         <div class="menu-subscribe-submit"><input type="submit" value="Подписаться" /></div>
                                     </form>
@@ -179,7 +239,7 @@
             <!-- container -->
             <div class="container">
 
-                <div class="category-title">Медиахолдинг PROfashion</div>
+                <h1 class="category-title">Медиахолдинг PROfashion</h1>
 
                 <!-- main popular -->
                 <div class="main-popular main-popular-articles">
@@ -207,7 +267,7 @@
 
                             <!-- publishers projects -->
                             <div class="publishers-projects">
-                                <div class="main-news-title">Проекты</div>
+                                <h2 class="main-news-title">Проекты</h2>
                                 <div class="publishers-projects-list">
                                     <div class="publishers-projects-item">
                                         <a href="#">
@@ -359,7 +419,7 @@
 
                             <!-- publishers contacts -->
                             <div class="publishers-contacts">
-                                <div class="main-news-title">контакты</div>
+                                <h2 class="main-news-title">контакты</h2>
                                 <div class="publishers-contacts-list">
                                     <div class="publishers-contacts-item">
                                         <div class="publishers-contacts-item-title">адрес</div>
@@ -397,7 +457,7 @@
 
                             <!-- publishers team -->
                             <div class="publishers-team">
-                                <div class="main-news-title">Кто создает PROfashion</div>
+                                <h2 class="main-news-title">Кто создает PROfashion</h2>
                                 <div class="publishers-team-list">
                                     <div class="publishers-team-item">
                                         <div class="publishers-team-item-preview"><img src="files/team-1.jpg" alt="" /></div>
@@ -505,7 +565,7 @@
 
             <div class="publishers-map">
                 <div class="container">
-                    <div class="main-news-title">Схема проезда</div>
+                    <h2 class="main-news-title">Схема проезда</h2>
                 </div>
                 <div class="publishers-map-inner" id="map"></div>
                 <script>
@@ -540,7 +600,7 @@
                 <div class="container">
                     <div class="footer-subscribe">
                         <div class="footer-subscribe-title">Все актуальные новости fashion-индустрии раз в неделю</div>
-                        <form action="#" method="post">
+                        <form action="windows/subscribe.html" method="post" class="ajax-form">
                             <div class="footer-subscribe-input"><input type="text" name="email" value="" placeholder="Ваш адрес электронной почты" class="required email" /></div>
                             <div class="footer-subscribe-submit"><input type="submit" value="Подписаться" /></div>
                         </form>
@@ -597,9 +657,16 @@
                         </div>
                         <div class="footer-developer">Создание сайта - <a href="http://bilingo.ru" target="_blank">Bilingo.ru</a></div>
                         <div class="footer-age"><div class="footer-age-inner">16+</div></div>
+
+                        <div class="footer-print">
+                            <div class="footer-print-phone">+7 (495) 128-30-20</div>
+                            <div class="footer-print-email">info@profashion.ru</div>
+                        </div>
                     </div>
                 </div>
             </footer>
+
+            <a href="#" class="up-link"></a>
 
         </div>
         <!-- wrapper END -->
@@ -612,7 +679,9 @@
         <script src="js/chosen/chosen.jquery.min.js"></script>
         <script src="js/slick/slick.min.js"></script>
         <script src="js/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
         <script src="js/tools.js"></script>
+        <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
 
     </body>
 </html>

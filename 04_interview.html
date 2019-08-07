@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="js/slick/slick.css" />
         <link rel="stylesheet" href="js/mcustomscrollbar/jquery.mCustomScrollbar.css" />
 
+        <link rel="stylesheet" href="css/print.css" media="print" />
+
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
         <meta name="viewport" content="width=device-width" />
@@ -36,7 +38,7 @@
                 <div class="header-inner">
                     <div class="container">
                         <div class="header-top">
-                            <div class="logo"><a href="#"></a></div>
+                            <div class="logo"><a href="#"><img src="images/logo-print.png" alt="" /></a></div>
 
                             <div class="header-title">О моде для профессионалов</div>
 
@@ -55,21 +57,79 @@
                             </div>
 
                             <div class="header-lang">
-                                <a href="#">En</a>
-                                <a href="#">It</a>
-                                <a href="#">Fr</a>
+                                <div data-google-lang="ru" class="active">Ru</div>
+                                <div data-google-lang="en" class="">En</div>
+                                <div data-google-lang="it" class="">It</div>
+                                <div data-google-lang="fr" class="">Fr</div>
+                            </div>
+
+                            <div class="header-print">
+                                <div class="header-print-phone">+7 (495) 128-30-20</div>
+                                <div class="header-print-email">info@profashion.ru</div>
                             </div>
                         </div>
 
                         <nav>
                             <ul>
-                                <li><a href="#">Бизнес</a></li>
-                                <li><a href="#">Мода</a></li>
-                                <li><a href="#">Производство</a></li>
-                                <li><a href="#">События</a></li>
+                                <li>
+                                    <a href="#">Бизнес</a>
+                                    <ul>
+                                        <li><a href="#">Маркетинг</a></li>
+                                        <li><a href="#">Право</a></li>
+                                        <li><a href="#">Карьера</a></li>
+                                        <li><a href="#">Власть</a></li>
+                                        <li><a href="#">Sustainability</a></li>
+                                        <li><a href="#">Digital</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Мода</a>
+                                    <ul>
+                                        <li><a href="#">Дизайн</a></li>
+                                        <li><a href="#">Тенденции</a></li>
+                                        <li><a href="#">Персоны</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Производство</a>
+                                    <ul>
+                                        <li><a href="#">Продукты</a></li>
+                                        <li><a href="#">Индустрия</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">События</a>
+                                    <ul>
+                                        <li><a href="#">Показы</a></li>
+                                        <li><a href="#">Выставки</a></li>
+                                        <li><a href="#">Конференции</a></li>
+                                        <li><a href="#">Образование</a></li>
+                                        <li><a href="#">Inspiration</a></li>
+                                        <li><a href="#">Конкурсы</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#">Kids</a></li>
-                                <li><a href="#">Навигатор</a></li>
-                                <li><a href="#">Журналы</a></li>
+                                <li>
+                                    <a href="#">Навигатор</a>
+                                    <ul>
+                                        <li><a href="#">Календарь индустрии моды</a></li>
+                                        <li><a href="#">Бренды</a></li>
+                                        <li><a href="#">Шоу-румы</a></li>
+                                        <li><a href="#">Франчайзинг</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Журналы</a>
+                                    <ul>
+                                        <li><a href="#">PROfashion magazine</a></li>
+                                        <li><a href="#">PROfashion Навигатор</a></li>
+                                        <li><a href="#">PROfashion Свободный склад</a></li>
+                                        <li><a href="#">PROfashion Гид по верхней одежде и мехам</a></li>
+                                        <li><a href="#">CPM & PROfashion</a></li>
+                                        <li><a href="#">PROfashion Спецпроекты</a></li>
+                                        <li><a href="#">KIDS catalogue</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                             <a href="#" class="nav-tag">#Bee-together</a>
                         </nav>
@@ -164,7 +224,7 @@
                             <div class="menu-bottom">
                                 <div class="menu-subscribe">
                                     <div class="menu-subscribe-title">Все актуальные новости fashion-индустрии раз в неделю</div>
-                                    <form action="#" method="post">
+                                    <form action="windows/subscribe.html" method="post" class="ajax-form">
                                         <div class="menu-subscribe-input"><input type="text" name="email" value="" placeholder="Ваш адрес электронной почты" class="required email" /></div>
                                         <div class="menu-subscribe-submit"><input type="submit" value="Подписаться" /></div>
                                     </form>
@@ -186,14 +246,14 @@
             <div class="container">
 
                 <div class="article-header">
-                    <div class="article-header-type">бизнес / ритейл</div>
-                    <div class="article-header-date">21 мая 12:30</div>
+                    <div class="article-header-type"><a href="#">бизнес</a> / <a href="#">ритейл</a></div>
+                    <div class="article-header-date">21 мая 2019 г. 12:30</div>
                 </div>
 
                 <!-- article -->
                 <div class="article">
                     <div class="article-content">
-                        <div class="article-title">Голос улиц. Василий Волчок и Антон Тюленев</div>
+                        <h1 class="article-title">Голос улиц. Василий Волчок и Антон Тюленев</h1>
                         <div class="article-anonce">Основатели двух популярных у российских зетов локальных брендов streetwear, Василий Волчок («Волчок») и Антон Тюленев («Юность»), поделились опытом привлечения новейшего поколения потребителей.</div>
                         <div class="article-info">
                             <div class="article-info-item">Источник: <a href="#">Этаоин Шрдлу</a></div>
@@ -257,16 +317,16 @@
                         </div>
 
                         <div class="article-theme">
-                            <div class="main-news-title">Статьи по теме</div>
+                            <h2 class="main-news-title">Статьи по теме</h2>
                             <div class="main-news-companies-list">
-                                <div class="main-news-companies-item"><a href="#">Bikkembergs объявил о реструктуризации</a> <span>21 мая 12:30</span></div>
-                                <div class="main-news-companies-item"><a href="#">Английский бренд Minoti приглашает к сотрудничеству российских байеров</a> <span>21 мая 12:30</span></div>
-                                <div class="main-news-companies-item"><a href="#">В Петербурге создадут Ассоциацию арендаторов и собственников стрит-ритейла</a> <span>21 мая 12:30</span></div>
-                                <div class="main-news-companies-item"><a href="#">Владельцы Chanel инвестируют в исландского производителя</a> <span>21 мая 12:30</span></div>
-                                <div class="main-news-companies-item"><a href="#">Английский бренд Minoti приглашает к сотрудничеству российских байеров</a> <span>21 мая 12:30</span></div>
-                                <div class="main-news-companies-item"><a href="#">В Петербурге создадут Ассоциацию арендаторов и собственников стрит-ритейла</a> <span>21 мая 12:30</span></div>
-                                <div class="main-news-companies-item"><a href="#">Владельцы Chanel инвестируют в исландского производителя</a> <span>21 мая 12:30</span></div>
-                                <div class="main-news-companies-item"><a href="#">Moose Knuckles видит потенциал в России</a> <span>21 мая 12:30</span></div>
+                                <div class="main-news-companies-item"><a href="#">Bikkembergs объявил о реструктуризации</a> <span>21 мая 2019 г. 12:30</span></div>
+                                <div class="main-news-companies-item"><a href="#">Английский бренд Minoti приглашает к сотрудничеству российских байеров</a> <span>21 мая 2019 г. 12:30</span></div>
+                                <div class="main-news-companies-item"><a href="#">В Петербурге создадут Ассоциацию арендаторов и собственников стрит-ритейла</a> <span>21 мая 2019 г. 12:30</span></div>
+                                <div class="main-news-companies-item"><a href="#">Владельцы Chanel инвестируют в исландского производителя</a> <span>21 мая 2019 г. 12:30</span></div>
+                                <div class="main-news-companies-item"><a href="#">Английский бренд Minoti приглашает к сотрудничеству российских байеров</a> <span>21 мая 2019 г. 12:30</span></div>
+                                <div class="main-news-companies-item"><a href="#">В Петербурге создадут Ассоциацию арендаторов и собственников стрит-ритейла</a> <span>21 мая 2019 г. 12:30</span></div>
+                                <div class="main-news-companies-item"><a href="#">Владельцы Chanel инвестируют в исландского производителя</a> <span>21 мая 2019 г. 12:30</span></div>
+                                <div class="main-news-companies-item"><a href="#">Moose Knuckles видит потенциал в России</a> <span>21 мая 2019 г. 12:30</span></div>
                             </div>
                         </div>
 
@@ -290,7 +350,7 @@
                         <div class="article-subscribe">
                             <div class="article-subscribe-inner">
                                 <div class="article-subscribe-title">Все актуальные новости fashion-индустрии раз в неделю</div>
-                                <form action="#" method="post">
+                                <form action="windows/subscribe.html" method="post" class="ajax-form">
                                     <div class="article-subscribe-input"><input type="text" name="email" value="" placeholder="Ваш адрес электронной почты" class="required email" /></div>
                                     <div class="article-subscribe-submit"><input type="submit" value="Подписаться" /></div>
                                 </form>
@@ -299,7 +359,7 @@
                     </div>
 
                     <div class="article-side">
-                        <div class="banner-side">
+                        <div class="banner-side banner-side-inter">
                             <div class="banner-side-wrap">
                                 <div class="banner-side-inner"><a href="#" target="_blank"><img src="files/banner-side.jpg" alt="" /></a></div>
                                 <div class="side-link-adv"><a href="#">Купить рекламу на PROfashion</a></div>
@@ -312,7 +372,7 @@
                 <div class="article-subscribe article-subscribe-mobile">
                     <div class="article-subscribe-inner">
                         <div class="article-subscribe-title">Все актуальные новости fashion-индустрии раз в неделю</div>
-                        <form action="#" method="post">
+                        <form action="windows/subscribe.html" method="post" class="ajax-form">
                             <div class="article-subscribe-input"><input type="text" name="email" value="" placeholder="Ваш адрес электронной почты" class="required email" /></div>
                             <div class="article-subscribe-submit"><input type="submit" value="Подписаться" /></div>
                         </form>
@@ -322,22 +382,22 @@
                 <!-- main news companies -->
                 <div class="main-news-companies">
                     <div class="main-news-companies-content">
-                        <div class="main-news-title">Новости компаний</div>
+                        <h2 class="main-news-title">Новости компаний</h2>
                         <div class="main-news-companies-list">
-                            <div class="main-news-companies-item"><a href="#">Bikkembergs объявил о реструктуризации</a> <span>21 мая 12:30</span></div>
-                            <div class="main-news-companies-item"><a href="#">Английский бренд Minoti приглашает к сотрудничеству российских байеров</a> <span>21 мая 12:30</span></div>
-                            <div class="main-news-companies-item"><a href="#">В Петербурге создадут Ассоциацию арендаторов и собственников стрит-ритейла</a> <span>21 мая 12:30</span></div>
-                            <div class="main-news-companies-item"><a href="#">Владельцы Chanel инвестируют в исландского производителя</a> <span>21 мая 12:30</span></div>
-                            <div class="main-news-companies-item"><a href="#">Английский бренд Minoti приглашает к сотрудничеству российских байеров</a> <span>21 мая 12:30</span></div>
-                            <div class="main-news-companies-item"><a href="#">В Петербурге создадут Ассоциацию арендаторов и собственников стрит-ритейла</a> <span>21 мая 12:30</span></div>
-                            <div class="main-news-companies-item"><a href="#">Владельцы Chanel инвестируют в исландского производителя</a> <span>21 мая 12:30</span></div>
-                            <div class="main-news-companies-item"><a href="#">Moose Knuckles видит потенциал в России</a> <span>21 мая 12:30</span></div>
-                            <div class="main-news-companies-item"><a href="#">Bikkembergs объявил о реструктуризации</a> <span>21 мая 12:30</span></div>
-                            <div class="main-news-companies-item"><a href="#">Английский бренд Minoti приглашает к сотрудничеству российских байеров</a> <span>21 мая 12:30</span></div>
-                            <div class="main-news-companies-item"><a href="#">В Петербурге создадут Ассоциацию арендаторов и собственников стрит-ритейла</a> <span>21 мая 12:30</span></div>
-                            <div class="main-news-companies-item"><a href="#">Владельцы Chanel инвестируют в исландского производителя</a> <span>21 мая 12:30</span></div>
-                            <div class="main-news-companies-item"><a href="#">Английский бренд Minoti приглашает к сотрудничеству российских байеров</a> <span>21 мая 12:30</span></div>
-                            <div class="main-news-companies-item"><a href="#">В Петербурге создадут Ассоциацию арендаторов и собственников стрит-ритейла</a> <span>21 мая 12:30</span></div>
+                            <div class="main-news-companies-item"><a href="#">Bikkembergs объявил о реструктуризации</a> <span>21 мая 2019 г. 12:30</span></div>
+                            <div class="main-news-companies-item"><a href="#">Английский бренд Minoti приглашает к сотрудничеству российских байеров</a> <span>21 мая 2019 г. 12:30</span></div>
+                            <div class="main-news-companies-item"><a href="#">В Петербурге создадут Ассоциацию арендаторов и собственников стрит-ритейла</a> <span>21 мая 2019 г. 12:30</span></div>
+                            <div class="main-news-companies-item"><a href="#">Владельцы Chanel инвестируют в исландского производителя</a> <span>21 мая 2019 г. 12:30</span></div>
+                            <div class="main-news-companies-item"><a href="#">Английский бренд Minoti приглашает к сотрудничеству российских байеров</a> <span>21 мая 2019 г. 12:30</span></div>
+                            <div class="main-news-companies-item"><a href="#">В Петербурге создадут Ассоциацию арендаторов и собственников стрит-ритейла</a> <span>21 мая 2019 г. 12:30</span></div>
+                            <div class="main-news-companies-item"><a href="#">Владельцы Chanel инвестируют в исландского производителя</a> <span>21 мая 2019 г. 12:30</span></div>
+                            <div class="main-news-companies-item"><a href="#">Moose Knuckles видит потенциал в России</a> <span>21 мая 2019 г. 12:30</span></div>
+                            <div class="main-news-companies-item"><a href="#">Bikkembergs объявил о реструктуризации</a> <span>21 мая 2019 г. 12:30</span></div>
+                            <div class="main-news-companies-item"><a href="#">Английский бренд Minoti приглашает к сотрудничеству российских байеров</a> <span>21 мая 2019 г. 12:30</span></div>
+                            <div class="main-news-companies-item"><a href="#">В Петербурге создадут Ассоциацию арендаторов и собственников стрит-ритейла</a> <span>21 мая 2019 г. 12:30</span></div>
+                            <div class="main-news-companies-item"><a href="#">Владельцы Chanel инвестируют в исландского производителя</a> <span>21 мая 2019 г. 12:30</span></div>
+                            <div class="main-news-companies-item"><a href="#">Английский бренд Minoti приглашает к сотрудничеству российских байеров</a> <span>21 мая 2019 г. 12:30</span></div>
+                            <div class="main-news-companies-item"><a href="#">В Петербурге создадут Ассоциацию арендаторов и собственников стрит-ритейла</a> <span>21 мая 2019 г. 12:30</span></div>
                         </div>
 
                         <div class="main-news-companies-more">
@@ -412,7 +472,7 @@
                 <div class="container">
                     <div class="footer-subscribe">
                         <div class="footer-subscribe-title">Все актуальные новости fashion-индустрии раз в неделю</div>
-                        <form action="#" method="post">
+                        <form action="windows/subscribe.html" method="post" class="ajax-form">
                             <div class="footer-subscribe-input"><input type="text" name="email" value="" placeholder="Ваш адрес электронной почты" class="required email" /></div>
                             <div class="footer-subscribe-submit"><input type="submit" value="Подписаться" /></div>
                         </form>
@@ -469,9 +529,16 @@
                         </div>
                         <div class="footer-developer">Создание сайта - <a href="http://bilingo.ru" target="_blank">Bilingo.ru</a></div>
                         <div class="footer-age"><div class="footer-age-inner">16+</div></div>
+
+                        <div class="footer-print">
+                            <div class="footer-print-phone">+7 (495) 128-30-20</div>
+                            <div class="footer-print-email">info@profashion.ru</div>
+                        </div>
                     </div>
                 </div>
             </footer>
+
+            <a href="#" class="up-link"></a>
 
         </div>
         <!-- wrapper END -->
@@ -484,7 +551,9 @@
         <script src="js/chosen/chosen.jquery.min.js"></script>
         <script src="js/slick/slick.min.js"></script>
         <script src="js/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
         <script src="js/tools.js"></script>
+        <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
 
     </body>
 </html>
