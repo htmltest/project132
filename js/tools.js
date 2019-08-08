@@ -693,8 +693,9 @@ function TranslateClearCookie() {
 }
 
 function TranslateSetCookie(code) {
-    $.cookie('googtrans', '/auto/' + code);
+    $.cookie('googtrans', '/auto/' + code, {expires: 365});
     $.cookie('googtrans', '/auto/' + code, {
         domain: '.' + document.domain,
+        expires: 365
     });
 }
