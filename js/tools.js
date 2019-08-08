@@ -674,8 +674,9 @@ function TranslateInit() {
         pageLanguage: googleTranslateConfig.lang
     });
 
-    $('[data-google-lang]').click(function (e) {
+    $('[data-google-lang]').click(function(e) {
         TranslateSetCookie($(this).attr('data-google-lang'));
+        e.preventDefault();
         window.location.reload();
     });
 }
@@ -686,16 +687,25 @@ function TranslateGetCode() {
 }
 
 function TranslateClearCookie() {
-    $.cookie('googtrans', null);
-    $.cookie('googtrans', null, {
-        domain: '.' + document.domain,
+    $.removeCookie("googtrans");
+    $.removeCookie("googtrans", {
+        domain: "." + document.domain
+    });
+    $.cookie("googtrans", null, {
+        expires: 365
+    });
+    $.cookie("googtrans", null, {
+        domain: "." + document.domain,
+        expires: 365
     });
 }
 
 function TranslateSetCookie(code) {
-    $.cookie('googtrans', '/auto/' + code, {expires: 365});
-    $.cookie('googtrans', '/auto/' + code, {
-        domain: '.' + document.domain,
+    $.cookie("googtrans", "\/auto\/" + code, {
+        expires: 365
+    });
+    $.cookie("googtrans", "\/auto\/" + code, {
+        domain: "." + document.domain,
         expires: 365
     });
 }
