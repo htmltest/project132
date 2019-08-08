@@ -682,7 +682,7 @@ function TranslateInit() {
 
 function TranslateGetCode() {
     var lang = ($.cookie('googtrans') != undefined && $.cookie('googtrans') != 'null') ? $.cookie('googtrans') : googleTranslateConfig.lang;
-    return true;
+    return lang.substr(-2);
 }
 
 function TranslateClearCookie() {
