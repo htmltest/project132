@@ -394,8 +394,8 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
     .menu-section+.menu-section {margin-top:28px}
     .menu-section-list+.menu-section {margin-top:28px}
     .menu-section-list {display:none; font-size:17px; line-height:21px; margin:18px 0 0 0; padding:0 0 14px 0}
-    .menu-section.with-submenu a::after {content:""; display:inline-block; vertical-align:middle; width:13px; height:8px; background:url(../images/arrow.svg) no-repeat; margin:-2px 0 0 9px}
-    .menu-section.with-submenu.open a::after {transform:rotate(-180deg)}
+    .menu-section.with-submenu span {display:inline-block; vertical-align:middle; width:13px; height:8px; background:url(../images/arrow.svg) no-repeat; margin:-2px 0 0 9px}
+    .menu-section.with-submenu.open span {transform:rotate(-180deg)}
     .menu-section.with-submenu.open+.menu-section-list {display:block}
 }
 
@@ -461,7 +461,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .main-big-content {position:absolute; left:50px; bottom:31px; right:50px}
 .main-big-type {display:inline-block; vertical-align:top; height:23px; background:#ec1d22; padding:0 10px; text-transform:uppercase; font-size:9px; font-weight:500; line-height:23px; letter-spacing:0.05em}
 .main-big-date-mobile {display:none}
-.main-big-title {font-weight:bold; font-size:27px; line-height:35px; letter-spacing:0; padding:9px 0 0 0; transition:all 0.2s}
+.main-big-title {font-weight:bold; font-size:27px; line-height:35px; letter-spacing:0; padding:9px 0 0 0; transition:all 0.2s; color:#fff; margin:0}
 .main-big a:hover .main-big-title {color:#ec1d22}
 .fonts-loaded .main-big-title {font-family:Merriweather, serif}
 .main-big-anonce {padding:2px 0 0 0; font-size:17px; line-height:23px; letter-spacing:0}
@@ -508,7 +508,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .main-mini-photo img {display:block; width:100%}
 .main-mini-type {display:inline-block; vertical-align:top; height:22px; margin:25px 0 0 0; background:rgba(236, 29, 34, 0.1); padding:0 7px; text-transform:uppercase; font-size:9px; font-weight:500; line-height:22px; letter-spacing:0.05em; color:#ec1d22}
 .main-mini-date-mobile {display:none}
-.main-mini-title {font-weight:bold; font-size:17px; line-height:23px; letter-spacing:0; padding:12px 0 0 0; transition:all 0.2s; color:#282828}
+.main-mini-title {font-weight:bold; font-size:17px; line-height:23px; letter-spacing:0; padding:12px 0 0 0; transition:all 0.2s; color:#282828; margin:0}
 .main-mini a:hover .main-mini-title {color:#ec1d22}
 .fonts-loaded .main-mini-title {font-family:Merriweather, serif}
 .main-mini-anonce {padding:7px 0 0 0; font-size:15px; line-height:24px; letter-spacing:0; color:#797979}
@@ -624,7 +624,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .main-news-item-header::after {content:""; display:block; clear:both}
 .main-news-item-type {float:left; height:22px; background:rgba(236, 29, 34, 0.1); padding:0 7px; text-transform:uppercase; font-size:9px; font-weight:500; line-height:22px; letter-spacing:0.05em; color:#ec1d22}
 .main-news-item-date {float:left; margin:0 0 0 11px; font-size:11px; font-weight:normal; line-height:22px; color:#999}
-.main-news-item-title {font-weight:bold; font-size:17px; line-height:23px; letter-spacing:0; padding:12px 0 0 0; transition:all 0.2s; color:#282828}
+.main-news-item-title {font-weight:bold; font-size:17px; line-height:23px; letter-spacing:0; padding:12px 0 0 0; transition:all 0.2s; color:#282828; margin:0}
 .main-news-item a:hover .main-news-item-title {color:#ec1d22}
 .fonts-loaded .main-news-item-title {font-family:Merriweather, serif}
 .main-news-item-anonce {padding:7px 0 0 0; font-size:15px; line-height:24px; letter-spacing:0; color:#797979}
@@ -874,7 +874,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .category-content-header::after {content:""; display:block; clear:both}
 .category-content-type {float:left; height:22px; background:rgba(236, 29, 34, 0.1); padding:0 7px; text-transform:uppercase; font-size:9px; font-weight:500; line-height:22px; letter-spacing:0.05em; color:#ec1d22}
 .category-content-date {float:left; margin:0 0 0 11px; font-size:11px; font-weight:normal; line-height:22px; color:#999}
-.category-content-title {font-weight:bold; font-size:27px; line-height:35px; letter-spacing:0; padding:19px 0 0 0; color:#494949; transition:all 0.2s}
+.category-content-title {font-weight:bold; font-size:27px; line-height:35px; letter-spacing:0; padding:19px 0 0 0; color:#494949; transition:all 0.2s; margin:0}
 .category:hover .category-content-title {color:#ec1d22}
 .fonts-loaded .category-content-title {font-family:Merriweather, serif}
 .category-content-anonce {padding:12px 0 0 0; font-size:15px; line-height:24px; letter-spacing:0; color:#797979}
