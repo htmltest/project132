@@ -443,6 +443,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 }
 
 .nav-tag {float:right; margin:14px 0 0 0; height:27px; padding:0 12px; background:rgba(236, 29, 34, 0.1); font-size:13px; font-weight:normal; line-height:27px}
+.nav-tag+.nav-tag {margin-right:10px}
 .nav-tag:hover {text-decoration:none; color:#fff; background:#ec1d22}
 
 .main::after {content:""; display:block; clear:both}
