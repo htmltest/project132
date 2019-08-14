@@ -57,6 +57,7 @@ $(document).ready(function() {
                                                                 '<div class="main-mini-info-view">' + curBig.find('.main-big-info-view').html() + '</div>' +
                                                             '</div>' +
                                                         '</a>' +
+                                                        '<div class="main-mini-type-links">' + curBig.find('.main-big-type-links').html() + '</div>' +
                                                     '</div>');
         }
     });
@@ -348,6 +349,11 @@ $(document).ready(function() {
                             }).done(function(html) {
                                 curInifinity.append(html);
                                 curInifinity.find('.article-infinity-item:last').addClass('next');
+
+                                $('.to-link').each(function() {
+                                    var curItem = $(this);
+                                    curItem.replaceWith('<a href="' + curItem.attr('data-href') + '" target="_blank">' + curItem.html() + '</a>');
+                                });
                             });
                         }
                     }
@@ -380,6 +386,24 @@ $(document).ready(function() {
         var curItem = $(this);
         curItem.replaceWith('<a href="' + curItem.attr('data-href') + '" target="_blank">' + curItem.html() + '</a>');
     });
+
+    window.setInterval(function(e) {
+        $('.main-big').each(function() {
+            $(this).find('.main-big-type-links').css({'top': $(this).find('.main-big-type').offset().top - $(this).offset().top});
+        });
+
+        $('.main-mini').each(function() {
+            $(this).find('.main-mini-type-links').css({'top': $(this).find('.main-mini-type').offset().top - $(this).offset().top});
+        });
+
+        $('.page-404-tab-item').each(function() {
+            $(this).find('.main-mini-type-links').css({'top': $(this).find('.main-mini-type').offset().top - $(this).offset().top});
+        });
+
+        $('.category-wrap').each(function() {
+            $(this).find('.category-content-type-links').css({'top': $(this).find('.category-content-type').offset().top - $(this).offset().top});
+        });
+    }, 100);
 
 });
 
