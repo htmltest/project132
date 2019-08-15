@@ -462,8 +462,8 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .main-big-photo::after {content:""; display:block; position:absolute; left:0; top:0; right:0; bottom:0; background:linear-gradient(180deg, rgba(0, 0, 0, 0) 39.58%, #000000 100%)}
 .main-big-photo img {display:block; width:100%}
 .main-big-content {position:absolute; left:50px; bottom:31px; right:50px}
-.main-big-type {display:inline-block; opacity:0; vertical-align:top; height:23px; background:#ec1d22; padding:0 10px; text-transform:uppercase; font-size:9px; font-weight:500; line-height:23px; letter-spacing:0.05em}
-.main-big-type-links {display:block; position:absolute; left:50px; top:0; white-space:nowrap; color:#fff; height:23px; background:#ec1d22; padding:0 10px; text-transform:uppercase; font-size:9px; font-weight:500; line-height:23px; letter-spacing:0.05em}
+.main-big-type {display:inline-block; vertical-align:top; height:23px; background:#ec1d22; padding:0 10px; text-transform:uppercase; font-size:9px; font-weight:500; line-height:23px; letter-spacing:0.05em}
+.main-big-type-links {display:block; opacity:0; position:absolute; left:50px; top:0; white-space:nowrap; color:#fff; height:23px; background:#ec1d22; padding:0 10px; text-transform:uppercase; font-size:9px; font-weight:500; line-height:23px; letter-spacing:0.05em}
 .main-big-type-links a {display:inline}
 .main-big-type-links a:hover {text-decoration:underline}
 .main-big-date-mobile {display:none}
@@ -514,8 +514,8 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .main-mini-photo::after {content:""; display:block; position:absolute; left:0; top:0; right:0; bottom:0; background:rgba(0, 0, 0, 0.25); opacity:0; transition:all 0.2s}
 .main-mini a:hover .main-mini-photo::after {opacity:1}
 .main-mini-photo img {display:block; width:100%}
-.main-mini-type {display:inline-block; opacity:0; vertical-align:top; height:22px; margin:25px 0 0 0; background:rgba(236, 29, 34, 0.1); padding:0 7px; text-transform:uppercase; font-size:9px; font-weight:500; line-height:22px; letter-spacing:0.05em; color:#ec1d22}
-.main-mini-type-links {display:block; position:absolute; left:11px; top:0; white-space:nowrap; color:#ec1d22; height:22px; background:rgba(236, 29, 34, 0.1); padding:0 7px; text-transform:uppercase; font-size:9px; font-weight:500; line-height:22px; letter-spacing:0.05em}
+.main-mini-type {display:inline-block; vertical-align:top; height:22px; margin:25px 0 0 0; background:rgba(236, 29, 34, 0.1); padding:0 7px; text-transform:uppercase; font-size:9px; font-weight:500; line-height:22px; letter-spacing:0.05em; color:#ec1d22}
+.main-mini-type-links {display:block; opacity:0; position:absolute; left:11px; top:0; white-space:nowrap; color:#ec1d22; height:22px; background:rgba(236, 29, 34, 0.1); padding:0 7px; text-transform:uppercase; font-size:9px; font-weight:500; line-height:22px; letter-spacing:0.05em}
 .main-mini-type-links a {display:inline; color:#ec1d22}
 .main-mini-type-links a:hover {text-decoration:underline}
 .main-mini-date-mobile {display:none}
@@ -889,8 +889,8 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .category-photo img {display:block; width:100%}
 .category-content {float:left; width:475px; margin:0 0 0 63px; padding:23px 0 0 0}
 .category-content-header::after {content:""; display:block; clear:both}
-.category-content-type {opacity:0; float:left; height:22px; background:rgba(236, 29, 34, 0.1); padding:0 7px; text-transform:uppercase; font-size:9px; font-weight:500; line-height:22px; letter-spacing:0.05em; color:#ec1d22}
-.category-content-type-links {position:absolute; left:643px; top:23px; height:22px; background:rgba(236, 29, 34, 0.1); padding:0 7px; text-transform:uppercase; font-size:9px; font-weight:500; line-height:22px; letter-spacing:0.05em; color:#ec1d22}
+.category-content-type {float:left; height:22px; background:rgba(236, 29, 34, 0.1); padding:0 7px; text-transform:uppercase; font-size:9px; font-weight:500; line-height:22px; letter-spacing:0.05em; color:#ec1d22}
+.category-content-type-links {opacity:0; position:absolute; left:643px; top:23px; height:22px; background:rgba(236, 29, 34, 0.1); padding:0 7px; text-transform:uppercase; font-size:9px; font-weight:500; line-height:22px; letter-spacing:0.05em; color:#ec1d22}
 .category-content-type-links a {color:#ec1d22}
 .category-content-type-links a:hover {text-decoration:underline}
 .category-content-date {float:left; margin:0 0 0 11px; font-size:11px; font-weight:normal; line-height:22px; color:#999}
