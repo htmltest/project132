@@ -3,6 +3,8 @@
 html {min-width:0; width:1000px}
 body {min-width:0; width:1000px; color:#101010; font-size:19px}
 
+.wrapper {font-size:19px}
+
 a {color:#101010 !important}
 
 ul {list-style:disc inside}
