@@ -22,11 +22,11 @@ iframe {border:none; max-width:100%; max-height:100%}
 strong, b, h1, h2, h3, h4, h5, h6, th {font-weight:normal}
 
 h1 {font-size:37px; line-height:48px; font-weight:normal; color:#0b0b0b; margin:0 0 23px 0; padding:0}
-.fonts-loaded h1 {font-family:Merriweather, serif}
+.fonts-loaded h1 {font-family:Merriweather, sans-serif}
 h2 {font-weight:bold; font-size:27px; line-height:45px; margin:31px 0 23px 0; padding:0; color:#161616}
-.fonts-loaded h2 {font-family:Merriweather, serif}
+.fonts-loaded h2 {font-family:Merriweather, sans-serif}
 h3 {font-weight:bold; font-size:17px; line-height:23px; margin:31px 0 23px 0; padding:0; color:#282828}
-.fonts-loaded h3 {font-family:Merriweather, serif}
+.fonts-loaded h3 {font-family:Merriweather, sans-serif}
 p {margin:23px 0; padding:0}
 ul {margin:28px 0; padding:0; list-style:none}
 ul li {margin:10px 0; padding:0 0 0 33px; position:relative}
@@ -472,7 +472,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .main-big-date-mobile {display:none}
 .main-big-title {font-weight:bold; font-size:27px; line-height:35px; letter-spacing:0; padding:9px 0 0 0; transition:all 0.2s; color:#fff; margin:0}
 .main-big a:hover .main-big-title {color:#ec1d22}
-.fonts-loaded .main-big-title {font-family:Merriweather, serif}
+.fonts-loaded .main-big-title {font-family:Merriweather, sans-serif}
 .main-big-anonce {padding:2px 0 0 0; font-size:17px; line-height:23px; letter-spacing:0}
 .main-big-info {padding:28px 0 0 0; font-size:13px; line-height:16px; font-weight:normal}
 .main-big-info::after {content:""; display:block; clear:both}
@@ -524,7 +524,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .main-mini-date-mobile {display:none}
 .main-mini-title {font-weight:bold; font-size:17px; line-height:23px; letter-spacing:0; padding:12px 0 0 0; transition:all 0.2s; color:#282828; margin:0}
 .main-mini a:hover .main-mini-title {color:#ec1d22}
-.fonts-loaded .main-mini-title {font-family:Merriweather, serif}
+.fonts-loaded .main-mini-title {font-family:Merriweather, sans-serif}
 .main-mini-anonce {padding:7px 0 0 0; font-size:15px; line-height:24px; letter-spacing:0; color:#797979}
 .main-mini-info {padding:26px 0 0 0; font-size:11px; line-height:16px; font-weight:normal; color:#999; letter-spacing:0}
 .main-mini-info::after {content:""; display:block; clear:both}
@@ -589,7 +589,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .main-number-preview {line-height:0; display:block; text-decoration:none}
 .main-number-preview img {display:block; width:100%}
 .main-number-title {margin:20px 0 0 0; font-size:11px; line-height:16px; font-weight:bold; color:#282828}
-.fonts-loaded .main-number-title {font-family:Merriweather, serif}
+.fonts-loaded .main-number-title {font-family:Merriweather, sans-serif}
 .main-number-title span {font-weight:normal; color:#8e8e8e}
 .main-number-anonce {font-size:11px; line-height:16px; font-weight:normal; color:#898989; padding:9px 0 0 0}
 .main-number-links {margin:17px 0 0 0}
@@ -644,7 +644,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .main-news-item-date {float:left; margin:0 0 0 11px; font-size:11px; font-weight:normal; line-height:22px; color:#999}
 .main-news-item-title {font-weight:bold; font-size:17px; line-height:23px; letter-spacing:0; padding:12px 0 0 0; transition:all 0.2s; color:#282828; margin:0}
 .main-news-item a:hover .main-news-item-title {color:#ec1d22}
-.fonts-loaded .main-news-item-title {font-family:Merriweather, serif}
+.fonts-loaded .main-news-item-title {font-family:Merriweather, sans-serif}
 .main-news-item-anonce {padding:7px 0 0 0; font-size:15px; line-height:24px; letter-spacing:0; color:#797979}
 .main-news-item-view {padding:0 0 0 26px; font-size:11px; line-height:16px; font-weight:normal; color:#999; background:url(../images/icon-view-gray.svg) no-repeat left center; margin:25px 0 0 0}
 
@@ -701,7 +701,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .main-news-companies-item {margin:20px 0 0 0; line-height:21px}
 .main-news-companies-item a {font-weight:normal; font-size:15px; color:#282828; text-decoration:none}
 .main-news-companies-item.selected a {color:#ec1d22}
-.fonts-loaded .main-news-companies-item a {font-family:Merriweather, serif}
+.fonts-loaded .main-news-companies-item a {font-family:Merriweather, sans-serif}
 .main-news-companies-item a:hover {text-decoration:underline}
 .main-news-companies-item span {color:#999; font-size:11px; font-weight:normal; margin:0 0 0 7px}
 
@@ -768,7 +768,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .main-calendar-item-title {font-weight:bold; font-size:17px; line-height:23px; letter-spacing:0; padding:14px 0 0 0}
 .main-calendar-item-title a {color:#282828; text-decoration:none}
 .main-calendar-item-title a:hover {color:#ec1d22; text-decoration:none}
-.fonts-loaded .main-calendar-item-title {font-family:Merriweather, serif}
+.fonts-loaded .main-calendar-item-title {font-family:Merriweather, sans-serif}
 .main-calendar-item-info {padding:11px 0 0 0; font-size:11px; line-height:16px; font-weight:normal; color:#999; letter-spacing:0}
 .main-calendar-item-info::after {content:""; display:block; clear:both}
 .main-calendar-item-date {float:left; padding:0 0 0 23px; background:url(../images/icon-date-red.svg) no-repeat left center}
@@ -797,7 +797,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .main-navigator-item a:hover .main-navigator-item-photo::after {opacity:1}
 .main-navigator-item-type {margin:19px 0 0 0; text-transform:uppercase; font-size:9px; line-height:12px; letter-spacing:0.05em; font-weight:500; color:#ec1d22}
 .main-navigator-item-title {margin:6px 0 0 0; font-weight:bold; font-size:15px; line-height:21px; letter-spacing:0}
-.fonts-loaded .main-navigator-item-title {font-family:Merriweather, serif}
+.fonts-loaded .main-navigator-item-title {font-family:Merriweather, sans-serif}
 
 @media screen and (max-width:1159px) {
     .main-navigator {padding:92px 0 0 0}
@@ -858,8 +858,8 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .other-item a:hover .other-item-photo::before {opacity:1}
 .other-item-photo img {display:block; width:100%}
 .other-item-photo span {display:block; position:absolute; left:0; bottom:0; padding:0 13px; height:22px; background:#ed686b; color:#fff; font-weight:500; font-size:9px; line-height:22px; letter-spacing:0.05em; text-transform:uppercase}
-.other-item-title {font-weight:bold; font-size:17px; line-height:25px; letter-spacing:0; color:#282828; margin:13px 0 0 0; font-family:Georgia, Times, serif}
-.fonts-loaded .other-item-title {font-family:Merriweather, serif}
+.other-item-title {font-weight:bold; font-size:17px; line-height:25px; letter-spacing:0; color:#282828; margin:13px 0 0 0; font-family:Georgia, Times, sans-serif}
+.fonts-loaded .other-item-title {font-family:Merriweather, sans-serif}
 .other-item a:hover .other-item-title {color:#ec1d22}
 
 @media screen and (max-width:1159px) {
@@ -899,7 +899,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .category-content-date {float:left; margin:0 0 0 11px; font-size:11px; font-weight:normal; line-height:22px; color:#999}
 .category-content-title {font-weight:bold; font-size:27px; line-height:35px; letter-spacing:0; padding:19px 0 0 0; color:#494949; transition:all 0.2s; margin:0}
 .category:hover .category-content-title {color:#ec1d22}
-.fonts-loaded .category-content-title {font-family:Merriweather, serif}
+.fonts-loaded .category-content-title {font-family:Merriweather, sans-serif}
 .category-content-anonce {padding:12px 0 0 0; font-size:15px; line-height:24px; letter-spacing:0; color:#797979}
 .category-content-view {padding:0 0 0 26px; font-size:11px; line-height:16px; font-weight:normal; color:#999; background:url(../images/icon-view-gray.svg) no-repeat left center; margin:25px 0 0 0}
 
@@ -1028,7 +1028,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .article::after {content:""; display:block; clear:both}
 .article-content {float:left; width:820px}
 .article-title {font-size:37px; line-height:48px; font-weight:normal; color:#0b0b0b}
-.fonts-loaded .article-title {font-family:Merriweather, serif}
+.fonts-loaded .article-title {font-family:Merriweather, sans-serif}
 .article-anonce {line-height:24px; color:#797979; margin:19px 0 0 0}
 .article-info {margin:30px 0 0 0}
 .article-info::after {content:""; display:block; clear:both}
@@ -1059,6 +1059,11 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 }
 
 .article-theme {margin:77px 0}
+
+.article-theme-title {font-weight:500; font-size:17px; line-height:23px; margin:0; letter-spacing:0.12em; color:#202020; text-transform:uppercase}
+.fonts-loaded .article-theme-title {font-family:Roboto, sans-serif}
+.article-theme-title+.main-news-companies-list {margin:31px 0 0 0}
+
 
 .article-tags {margin:30px 0 39px -9px; font-size:9px; font-weight:500; line-height:22px; letter-spacing:0.05em; text-transform:uppercase}
 .article-tags::after {content:""; display:block; clear:both}
@@ -1157,7 +1162,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .magazine-archive-item-preview img {display:block; width:100%}
 .magazine-archive-item-preview .btn {display:block; position:absolute; width:146px; height:40px; padding:0; left:50%; bottom:20px; margin-left:-73px}
 .magazine-archive-item-title {font-size:11px; font-weight:bold; line-height:16px; letter-spacing:0; color:#282828; margin:20px 0 0 0}
-.fonts-loaded .magazine-archive-item-title {font-family:Merriweather, serif}
+.fonts-loaded .magazine-archive-item-title {font-family:Merriweather, sans-serif}
 .magazine-archive-item-title span {font-weight:normal; color:#8e8e8e}
 .magazine-archive-item-download {font-weight:normal; font-size:11px; line-height:19px; text-transform:uppercase; letter-spacing:0.07em; margin:10px 0 0 0}
 
@@ -1205,11 +1210,13 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .search-results {margin:44px 0 60px 0; border-top:1px solid #e9e9e9}
 .search-result {border-bottom:1px solid #e9e9e9; padding:28px 0 25px 0}
 .search-result-title {font-weight:bold; font-size:17px; line-height:24px}
-.fonts-loaded .search-result-title {font-family:Merriweather, serif}
+.search-result-title b {font-weight:bold; background:#fff400}
+.fonts-loaded .search-result-title {font-family:Merriweather, sans-serif}
 .search-result-title a {color:#282828}
 .search-result-title a:hover {color:#ec1d22; text-decoration:none}
 .search-result-title span {font-weight:300}
 .search-result-anonce {line-height:24px; color:#797979; margin:8px 0 0 0}
+.search-result-anonce b {font-weight:300; background:#fff400}
 .search-result-path {text-transform:uppercase; font-size:11px; line-height:19px; font-weight:normal; color:#ec1d22; letter-spacing:0.07em; margin:9px 0 0 0}
 
 @media screen and (max-width:1159px) {
@@ -1280,7 +1287,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .magazines-item-preview img {display:block; width:100%}
 .magazines-item-content {float:left; width:372px; margin:0 0 0 54px}
 .magazines-item-title {font-weight:bold; font-size:15px; line-height:21px}
-.fonts-loaded .magazines-item-title {font-family:Merriweather, serif}
+.fonts-loaded .magazines-item-title {font-family:Merriweather, sans-serif}
 .magazines-item-title {color:#282828}
 .magazines-item a:hover .magazines-item-title {color:#ec1d22}
 .magazines-item-text {font-size:15px; line-height:21px; color:#898989; margin:9px 0 0 0}
@@ -1302,7 +1309,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .publishers-projects-item a:hover .publishers-projects-item-preview::after {opacity:1}
 .publishers-projects-item-preview img {display:inline-block; vertical-align:middle}
 .publishers-projects-item-title {font-weight:bold; font-size:15px; line-height:21px; letter-spacing:0; margin:27px 0 0 0}
-.fonts-loaded .publishers-projects-item-title {font-family:Merriweather, serif}
+.fonts-loaded .publishers-projects-item-title {font-family:Merriweather, sans-serif}
 .publishers-projects-item-title {color:#282828}
 .publishers-projects-item a:hover .publishers-projects-item-title {color:#ec1d22}
 .publishers-projects-item-anonce {font-size:15px; line-height:21px; color:#797979; margin:13px 0 0 0; letter-spacing:0}
@@ -1332,7 +1339,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .publishers-team-item {display:inline-block; vertical-align:top; width:33.33%; padding:55px 11px 0 11px}
 .publishers-team-item-preview img {display:block; width:100%}
 .publishers-team-item-title {font-weight:bold; font-size:15px; line-height:21px; letter-spacing:0; margin:20px 0 0 0; color:#282828}
-.fonts-loaded .publishers-team-item-title {font-family:Merriweather, serif}
+.fonts-loaded .publishers-team-item-title {font-family:Merriweather, sans-serif}
 .publishers-team-item-anonce {font-size:15px; line-height:21px; color:#797979; margin:4px 0 0 0; letter-spacing:0}
 .publishers-team-item-link {text-transform:uppercase; font-size:11px; line-height:19px; font-weight:normal; color:#ec1d22; letter-spacing:0.07em; margin:16px 0 0 0}
 
@@ -1535,7 +1542,7 @@ footer {background:#f3f3f3; margin:85px 0 0 0; padding:51px 0 40px 0}
 .window-success {width:707px; padding:92px 40px 68px 70px}
 .window-title {font-size:23px; line-height:30px; color:#0b0b0b; font-weight:normal}
 .window-title span {font-weight:300}
-.fonts-loaded .window-title {font-family:Merriweather, serif}
+.fonts-loaded .window-title {font-family:Merriweather, sans-serif}
 .window-text {margin:30px 0}
 
 @media screen and (max-width:1159px) {
