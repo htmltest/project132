@@ -74,6 +74,11 @@ $(document).ready(function() {
             }).done(function(html) {
                 var newHTML = $(html);
                 $('.main-news-list').append(newHTML.find('.main-news-list').html());
+                $('.main-news-list .lzy_img').each(function() {
+                    var lazyImage = $(this);
+                    lazyImage.attr('src', lazyImage.attr('data-src'));
+                    lazyImage.removeClass('lzy_img');
+                });
                 if (newHTML.find('.main-news-more .btn').length > 0) {
                     curLink.attr('href', newHTML.find('.main-news-more .btn').attr('href'));
                     curLink.removeClass('loading');
@@ -98,6 +103,11 @@ $(document).ready(function() {
             }).done(function(html) {
                 var newHTML = $(html);
                 $('.main-popular .main-mini-list').append(newHTML.find('.main-mini-list').html());
+                $('.main-popular .main-mini-list .lzy_img').each(function() {
+                    var lazyImage = $(this);
+                    lazyImage.attr('src', lazyImage.attr('data-src'));
+                    lazyImage.removeClass('lzy_img');
+                });
                 if (newHTML.find('.main-popular-more .btn').length > 0) {
                     curLink.attr('href', newHTML.find('.main-popular-more .btn').attr('href'));
                     curLink.removeClass('loading');
@@ -349,6 +359,11 @@ $(document).ready(function() {
                             }).done(function(html) {
                                 curInifinity.append(html);
                                 curInifinity.find('.article-infinity-item:last').addClass('next');
+                                $('.article-infinity .lzy_img').each(function() {
+                                    var lazyImage = $(this);
+                                    lazyImage.attr('src', lazyImage.attr('data-src'));
+                                    lazyImage.removeClass('lzy_img');
+                                });
 
                                 $('.to-link').each(function() {
                                     var curItem = $(this);
