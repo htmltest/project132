@@ -1127,7 +1127,8 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .magazine-info-new {width:112px; height:22px; margin:0 0 10px 0; text-align:center; background:rgba(236, 29, 34, 0.1); text-transform:uppercase; font-size:9px; font-weight:500; line-height:22px; letter-spacing:0.05em; color:#ec1d22}
 .magazine-info h2 {margin:0 0 38px 0}
 .magazine-info h2 span {color:#8e8e8e; font-weight:normal}
-.magazine-info-text {margin:15px 0 0 0}
+.magazine-info .main-news-title {font-size:17px}
+.magazine-info-text {margin:15px 0 0 0; font-size:14px; line-height:25px}
 .magazine-number-mobile {display:none}
 
 @media screen and (max-width:1159px) {

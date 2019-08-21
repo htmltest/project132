@@ -47,7 +47,7 @@ $(document).ready(function() {
         if (curBig.length == 1) {
             curBlock.find('.main-mini-list').prepend('<div class="main-mini main-mini-mobile">' +
                                                         '<a href="' + curBig.find('a').attr('href') + '">' +
-                                                            '<div class="main-mini-photo"><img src="' + curBig.find('.main-big-photo img').attr('src') + '" alt="" /></div>' +
+                                                            '<div class="main-mini-photo"><img src="' + curBig.find('.main-big-photo img').attr('data-src') + '" alt="" /></div>' +
                                                             '<div class="main-mini-type">' + curBig.find('.main-big-type').html() + '</div>' +
                                                             '<div class="main-mini-date-mobile">' + curBig.find('.main-big-date-mobile').html() + '</div>' +
                                                             '<div class="main-mini-title">' + curBig.find('.main-big-title').html() + '</div>' +
@@ -766,4 +766,31 @@ function TranslateSetCookie(code) {
         domain: "." + document.domain,
         expires: 365
     });
+}
+
+var arr = document.querySelectorAll('img.lzy_img');
+
+if ('IntersectionObserver' in window) {
+    document.addEventListener('DOMContentLoaded', function() {
+
+        const imageObserver = new IntersectionObserver(function(entries, imgObserver) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    const lazyImage = entry.target
+                    lazyImage.src = lazyImage.dataset.src
+                    lazyImage.classList.remove('lzy_img');
+                    imgObserver.unobserve(lazyImage);
+                }
+            })
+        });
+        for (var i = 0; i < arr.length; i++) {
+            imageObserver.observe(arr[i]);
+        }
+    })
+} else {
+    for (var i = 0; i < arr.length; i++) {
+        var lazyImage = arr[i];
+        lazyImage.src = lazyImage.dataset.src
+        lazyImage.classList.remove('lzy_img');
+    }
 }
