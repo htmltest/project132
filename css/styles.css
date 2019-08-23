@@ -406,6 +406,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
     .menu-tag a {display:inline-block; vertical-align:top; padding:0 10px; background:rgba(236, 29, 34, 0.1); max-width:100%; position:relative; overflow:hidden; text-overflow:ellipsis; text-decoration:none}
     .menu-tag a:active {text-decoration:none; color:#fff; background:#ec1d22}
     .menu-list {display:block; width:auto; border-top:1px solid #e7e7e7; padding:4px 0 0 0}
+    .menu-tags+.menu-list {border-top:none}
     .menu-item {display:block; width:auto; border-left:none; padding:0}
     .menu-section {margin:28px 0 0 0}
     .menu-section+.menu-section {margin-top:28px}
