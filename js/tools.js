@@ -425,6 +425,31 @@ $(document).ready(function() {
         });
     }, 100);
 
+    $('.header-lang-mobile').click(function() {
+        $('.header-lang').toggleClass('open');
+    });
+
+    $(document).click(function(e) {
+        if ($(e.target).parents().filter('.header-lang').length == 0) {
+            $('.header-lang').removeClass('open');
+        }
+    });
+
+    $('body').on('click', '.article-info-item-authors span', function() {
+        if ($(this).hasClass('open')) {
+            $(this).removeClass('open');
+        } else {
+            $('.article-info-item-authors span.open').removeClass('open');
+            $(this).addClass('open');
+        };
+    });
+
+    $(document).click(function(e) {
+        if ($(e.target).parents().filter('.article-info-item-authors span').length == 0 && !($(e.target).parent().hasClass('article-info-item-authors'))) {
+            $('.article-info-item-authors span.open').removeClass('open');
+        }
+    });
+
 });
 
 $(window).on('load', function() {
@@ -518,6 +543,12 @@ $(window).on('load resize scroll', function() {
         $('.up-link').addClass('visible');
     } else {
         $('.up-link').removeClass('visible');
+    }
+
+    if (curScroll + $(window).height() > $('footer').offset().top) {
+        $('.up-link').css({'margin-bottom': (curScroll + $(window).height()) - $('footer').offset().top});
+    } else {
+        $('.up-link').css({'margin-bottom': 0});
     }
 });
 
@@ -737,8 +768,9 @@ const googleTranslateConfig = {
 function TranslateInit() {
 
     var code = TranslateGetCode();
-    $('.header-lang div').removeClass('active');
-    $('.header-lang div[data-google-lang="' + code + '"]').addClass('active');
+    $('.header-lang-list div').removeClass('active');
+    $('.header-lang-list div[data-google-lang="' + code + '"]').addClass('active');
+    $('.header-lang-mobile').html($('.header-lang-list div[data-google-lang="' + code + '"]').html());
 
     if (code == googleTranslateConfig.lang) {
         TranslateClearCookie();
@@ -750,6 +782,7 @@ function TranslateInit() {
 
     $('[data-google-lang]').click(function(e) {
         TranslateSetCookie($(this).attr('data-google-lang'));
+        $('.header-lang').removeClass('open');
         e.preventDefault();
         window.location.reload();
     });
