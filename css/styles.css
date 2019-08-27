@@ -742,7 +742,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .main-news-companies-side {float:right; width:300px; margin:80px 0 0 0}
 
 @media screen and (max-width:1159px) {
-    .main-news-companies-side {float:none; width:auto; margin:77px 0 0 0}
+    .main-news-companies-side {display:none}
 }
 
 .main-popular {margin:103px 0 0 0}
@@ -1145,7 +1145,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .banner-content img {display:block; width:100%}
 
 @media screen and (max-width:1159px) {
-    .banner-content {margin-left:-40px; margin-right:-40px}
+    .banner-content {display:none}
 }
 
 .magazine {margin:67px 0 0 0}
