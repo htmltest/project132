@@ -316,6 +316,10 @@ header {height:203px}
 .header-lang-list div {float:left; width:40px; height:40px; margin:0 0 0 10px; border:1px solid #e9e9e9; font-weight:normal; font-size:13px; line-height:38px; text-align:center; color:#292929; text-decoration:none; cursor:pointer}
 .header-lang-list div.active {display:none}
 .header-lang-list div:hover {background:rgba(236, 29, 34, 0.1)}
+.header-lang-list-ru::before {content:"Ru"}
+.header-lang-list-en::before {content:"En"}
+.header-lang-list-it::before {content:"It"}
+.header-lang-list-fr::before {content:"Fr"}
 
 @media screen and (max-width:1159px) {
     .header-lang {margin:15px 17px 0 0; position:relative}
@@ -1263,7 +1267,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .gallery-list {font-size:0; line-height:0; letter-spacing:-1px; position:relative; white-space:nowrap; overflow:hidden}
 .gallery-item {display:inline-block; vertical-align:top; width:100%}
 .gallery-item-inner {padding:0 0 36px 0; position:relative}
-.gallery-item-photo img {display:block; max-width:100%; max-height:500px; margin:0 auto}
+.gallery-item-photo img {display:block; max-width:100%; max-height:615px; margin:0 auto}
 .gallery-item-title {position:absolute; left:0; bottom:0; right:100px; max-height:36px; overflow:hidden; font-size:13px; line-height:18px; letter-spacing:0; white-space:normal; color:#959595}
 .gallery-list .slick-prev,
 .gallery-list .slick-next {display:block; opacity:0; position:absolute; z-index:2; top:50%; width:46px; height:46px; border:1px solid #e5e5e5; border-radius:0; margin:-50px 0 0 0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; background:#fff; transition:border-color 0.2s, opacity 0.2s}

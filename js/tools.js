@@ -770,7 +770,7 @@ function TranslateInit() {
     var code = TranslateGetCode();
     $('.header-lang-list div').removeClass('active');
     $('.header-lang-list div[data-google-lang="' + code + '"]').addClass('active');
-    $('.header-lang-mobile').html($('.header-lang-list div[data-google-lang="' + code + '"]').html());
+    $('.header-lang-mobile').removeClass('header-lang-list-ru header-lang-list-en header-lang-list-it header-lang-list-fr').addClass('header-lang-list-' + code);
 
     if (code == googleTranslateConfig.lang) {
         TranslateClearCookie();
