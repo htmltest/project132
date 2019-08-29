@@ -911,6 +911,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .category-photo::before {content:""; display:block; position:absolute; left:0; top:0; right:0; bottom:0; background:rgba(0, 0, 0, 0.25); opacity:0; transition:all 0.2s}
 .category:hover .category-photo::before {opacity:1}
 .category-photo img {display:block; width:100%}
+.category-mark {position:absolute; left:0; top:20px; background:url(../images/category-mark.svg) no-repeat; width:136px; padding:0 10px 0 0; height:22px; text-align:center; color:#fff; font-size:10px; line-height:22px; letter-spacing:0.05em; text-transform:uppercase; font-weight:500}
 .category-content {float:left; width:475px; margin:0 0 0 63px; padding:23px 0 0 0}
 .category-content-header::after {content:""; display:block; clear:both}
 .category-content-type {float:left; height:22px; background:rgba(236, 29, 34, 0.1); padding:0 7px; text-transform:uppercase; font-size:9px; font-weight:500; line-height:22px; letter-spacing:0.05em; color:#ec1d22}
