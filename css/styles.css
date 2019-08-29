@@ -1201,6 +1201,14 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .magazine-archive-item-preview {position:relative}
 .magazine-archive-item-preview img {display:block; width:100%}
 .magazine-archive-item-preview .btn {display:block; position:absolute; width:146px; height:40px; padding:0; left:50%; bottom:20px; margin-left:-73px}
+.magazine-archive-item-preview-text {position:absolute; left:0; top:0; right:0; background:#fff; box-shadow:0 0 10px rgba(0, 0, 0, 0.25); opacity:0; padding:10px; transition:opacity 0.2s; font-size:12px; line-height:14px; letter-spacing:0}
+.magazine-archive-item:hover .magazine-archive-item-preview-text {opacity:1}
+.magazine-archive-item-preview-text-title {font-size:14px; line-height:17px; color:#000}
+.magazine-archive-item-preview-text-anonce {margin:5px 0 0 0; color:#777}
+.magazine-archive-item-preview-text-anonce p {margin:5px 0 0 0}
+.magazine-archive-item-preview-text-anonce ul {margin:5px 0 0 0}
+.magazine-archive-item-preview-text-anonce ul li {margin:0; padding-left:15px}
+.magazine-archive-item-preview-text-anonce ul li::before {top:4px}
 .magazine-archive-item-title {font-size:11px; font-weight:bold; line-height:16px; letter-spacing:0; color:#282828; margin:20px 0 0 0}
 .fonts-loaded .magazine-archive-item-title {font-family:Merriweather, sans-serif}
 .magazine-archive-item-title span {font-weight:normal; color:#8e8e8e}
