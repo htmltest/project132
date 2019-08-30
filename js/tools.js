@@ -582,6 +582,30 @@ $(window).on('load resize', function() {
         });
     });
 
+    $('.magazine-archive-list').each(function() {
+        var curList = $(this);
+
+        curList.find('.magazine-archive-item-preview').css({'min-height': '0px'});
+
+        curList.find('.magazine-archive-item-preview').each(function() {
+            var curBlock = $(this);
+            var curHeight = curBlock.outerHeight();
+            var curTop = curBlock.offset().top;
+
+            curList.find('.magazine-archive-item-preview').each(function() {
+                var otherBlock = $(this);
+                if (otherBlock.offset().top == curTop) {
+                    var newHeight = otherBlock.outerHeight();
+                    if (newHeight > curHeight) {
+                        curBlock.css({'min-height': newHeight + 'px'});
+                    } else {
+                        otherBlock.css({'min-height': curHeight + 'px'});
+                    }
+                }
+            });
+        });
+    });
+
     if ($(window).width() > 1159) {
         $('.main-popular:not(.main-popular-articles) .main-mini-list, .main-calendar-list, .main-navigator-list, .magazine-archive-years, .page-404-tab-list').each(function() {
             var curList = $(this);
