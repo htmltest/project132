@@ -187,8 +187,8 @@ header {height:203px}
     header {height:73px; border-bottom:1px solid #e7e7e8}
 }
 
-.fixed .header-inner {position:fixed; left:0; top:0; right:0; background:#fff; z-index:99; height:83px; border-bottom:1px solid #e7e7e8}
-.fixed .header-inner .container {height:83px}
+.fixed .header-inner {position:fixed; left:0; top:0; right:0; background:#fff; z-index:99; height:63px; border-bottom:1px solid #e7e7e8; box-shadow:0 5px 20px rgba(0, 0, 0, 0.14)}
+.fixed .header-inner .container {height:63px}
 
 @media screen and (max-width:1159px) {
     .fixed .header-inner {height:72px}
@@ -197,7 +197,7 @@ header {height:203px}
 
 .menu-open .header-inner {position:fixed; left:0; top:0; right:0; background:#fff; z-index:99; height:auto}
 .menu-open .header-inner::after {content:""; display:block; position:absolute; left:0; top:100%; right:0; height:9999px; background:rgba(0, 0, 0, 0.3)}
-.menu-open .header-top {height:84px}
+.menu-open .header-top {height:64px}
 .menu-open .header-inner .container {height:auto}
 
 @media screen and (max-width:1159px) {
@@ -216,7 +216,7 @@ header {height:203px}
     .logo {width:126px; height:27px; margin:22px 0 0 0; background:url(../images/logo-mobile.png) no-repeat}
 }
 
-.fixed .logo {width:149px; height:32px; margin:24px 0 0 0; background:url(../images/logo-fixed.png) no-repeat}
+.fixed .logo {width:149px; height:32px; margin:14px 0 0 0; background:url(../images/logo-fixed.png) no-repeat}
 
 @media screen and (max-width:1159px) {
     .fixed .logo {width:126px; height:27px; margin:24px 0 0 0; background:url(../images/logo-mobile.png) no-repeat}
@@ -230,7 +230,7 @@ header {height:203px}
 
 .header-title {display:none; float:left; margin:36px 0 0 89px; font-size:15px; line-height:40px; font-weight:normal; color:#797979}
 .header-title-visible {display:block; margin-left:39px; padding-left:39px; border-left:1px solid #e9e9e9}
-.fixed .header-title {margin-top:24px; line-height:32px}
+.fixed .header-title {margin-top:14px; line-height:32px}
 
 @media screen and (max-width:1159px) {
     .header-title {display:none}
@@ -254,7 +254,7 @@ header {height:203px}
     .menu-link {margin:25px 0 0 0}
 }
 
-.fixed .menu-link {margin:31px 0 0 0}
+.fixed .menu-link {margin:21px 0 0 0}
 
 @media screen and (max-width:1159px) {
     .fixed .menu-link {margin:25px 0 0 0}
@@ -302,7 +302,7 @@ header {height:203px}
     .header-search.open {width:165px}
 }
 
-.fixed .header-search {margin:31px 29px 0 0}
+.fixed .header-search {margin:21px 29px 0 0}
 
 @media screen and (max-width:1159px) {
     .fixed .header-search {margin:25px 30px 0 0}
@@ -348,7 +348,7 @@ header {height:203px}
     .banner-header {display:none}
 }
 
-.fixed .banner-header {top:40px}
+.fixed .banner-header {display:none}
 
 .menu-open .banner-header {display:none}
 
