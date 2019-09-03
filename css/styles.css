@@ -52,6 +52,7 @@ blockquote {margin:44px 0; padding:0 0 0 40px; border-left:2px solid #ec1d22}
 .wrapper td:last-child {padding-right:70px}
 .wrapper table.table-right-with-header td {text-align:right; padding-left:0; padding-right:70px}
 .wrapper tbody tr:nth-child(odd) td {background:#fde8e9}
+.wrapper table.table-without-border tbody tr:nth-child(odd) td {background:transparent}
 
 @media screen and (max-width:1159px) {
     .table-scroll {position:relative; overflow:auto; margin:40px 0 50px 0}
