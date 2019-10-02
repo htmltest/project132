@@ -1491,14 +1491,18 @@ footer {background:#f3f3f3; margin:85px 0 0 0; padding:51px 0 40px 0}
     .footer-age {margin:0; padding:0; position:absolute; left:184px; top:-38px}
 }
 
-.brand-footer {position:fixed; left:0; bottom:0; right:0; height:60px; z-index:80; background:#3593eb}
-.brand-footer-link {display:block; height:60px; background:no-repeat center}
+.brand-footer {position:fixed; left:0; bottom:0; right:0; z-index:80; background:#3593eb}
+.brand-footer-link {display:block; line-height:0}
+.brand-footer-link img {display:block; width:100%}
+.brand-footer-mobile {display:none}
 .brand-footer-close {display:block; width:23px; height:23px; position:absolute; right:10px; top:0; background:url(../images/brand-footer-close.svg) no-repeat center; background-color:#fb020291; border-radius:50%}
 .brand-footer-close:hover {opacity:0.8}
 .footer-print {display:none}
 
 @media screen and (max-width:1159px) {
     .brand-footer-close {width:30px; height:30px; background-color:#fb0202; right:5px; top:5px}
+    .brand-footer-desktop {display:none}
+    .brand-footer-mobile {display:block}
 }
 
 .page-404 {text-align:center; padding:24px 0 81px 0; border-bottom:1px solid #e9e9e9}
