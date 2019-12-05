@@ -368,26 +368,28 @@ $(document).ready(function() {
 
                                 curInifinity.find('.article-infinity-item:last .gallery').each(function() {
                                     var curGallery = $(this);
-                                    curGallery.find('.gallery-list').slick({
-                                        infinite: true,
-                                        slidesToShow: 1,
-                                        slidesToScroll: 1,
-                                        adaptiveHeight: true,
-                                        prevArrow: '<button type="button" class="slick-prev"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.22379 10L13 18.3777L11.6371 20L-4.37114e-07 10L11.6371 -5.08674e-07L13 1.62234L3.22379 10Z" /></svg></button>',
-                                        nextArrow: '<button type="button" class="slick-next"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.77621 10L8.8276e-07 1.62234L1.3629 -5.08674e-07L13 10L1.3629 20L1.50361e-07 18.3777L9.77621 10Z" /></svg></button>',
-                                        dots: false,
-                                        responsive: [
-                                            {
-                                                breakpoint: 1159,
-                                                settings: {
-                                                    arrows: false,
-                                                    dots: true
+                                    curGallery.find('img').eq(0).on('load', function() {
+                                        curGallery.find('.gallery-list').slick({
+                                            infinite: true,
+                                            slidesToShow: 1,
+                                            slidesToScroll: 1,
+                                            adaptiveHeight: true,
+                                            prevArrow: '<button type="button" class="slick-prev"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.22379 10L13 18.3777L11.6371 20L-4.37114e-07 10L11.6371 -5.08674e-07L13 1.62234L3.22379 10Z" /></svg></button>',
+                                            nextArrow: '<button type="button" class="slick-next"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.77621 10L8.8276e-07 1.62234L1.3629 -5.08674e-07L13 10L1.3629 20L1.50361e-07 18.3777L9.77621 10Z" /></svg></button>',
+                                            dots: false,
+                                            responsive: [
+                                                {
+                                                    breakpoint: 1159,
+                                                    settings: {
+                                                        arrows: false,
+                                                        dots: true
+                                                    }
                                                 }
-                                            }
-                                        ]
-                                    }).on('setPosition', function(event, slick) {
-                                        var currentSlide = curGallery.find('.gallery-list').slick('slickCurrentSlide') + 1;
-                                        curGallery.find('.gallery-ctrl-current').html(currentSlide);
+                                            ]
+                                        }).on('setPosition', function(event, slick) {
+                                            var currentSlide = curGallery.find('.gallery-list').slick('slickCurrentSlide') + 1;
+                                            curGallery.find('.gallery-ctrl-current').html(currentSlide);
+                                        });
                                     });
                                 });
 
