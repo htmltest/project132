@@ -468,6 +468,16 @@ $(document).ready(function() {
         } else {
             $('.article-info-item-authors span.open').removeClass('open');
             $(this).addClass('open');
+            if ($(window).width() < 1160) {
+                var curBlock = $(this).find('strong');
+                curBlock.css({'transform': 'none'});
+                if (curBlock.offset().left < 0) {
+                    curBlock.css({'transform': 'translateX(' + (-curBlock.offset().left) + 'px)'});
+                }
+                if ((curBlock.offset().left + curBlock.outerWidth()) > $(window).width()) {
+                    curBlock.css({'transform': 'translateX(' + ($(window).width() - (curBlock.offset().left + curBlock.outerWidth())) + 'px)'});
+                }
+            }
         };
     });
 
