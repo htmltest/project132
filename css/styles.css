@@ -10,11 +10,6 @@ body {top:0 !important; position:static !important; min-width:480px; margin:0; p
 .fonts-loaded .wrapper,
 .fonts-loaded .window {font-family:Roboto, sans-serif}
 
-@media screen and (max-width:1159px) {
-    .wrapper,
-    .window {font-size:18px}
-}
-
 a {color:#ec1d22; text-decoration:none; transition:all 0.2s}
 a:hover {text-decoration:underline}
 a:active {text-decoration:none}
@@ -64,7 +59,7 @@ blockquote {margin:44px 0; padding:0 0 0 40px; border-left:2px solid #ec1d22}
     .wrapper .table-scroll table {margin:0}
 }
 
-.btn {display:block; margin:0; padding:0 32px; overflow:visible; outline:none; vertical-align:top; height:40px; text-decoration:none; background:#fde8e9; color:#313131; border:1px solid #ec1d22; border-radius:0; font:11px/40px Tahoma, Geneva, sans-serif; letter-spacing:0.07em; text-align:center; transition:all 0.2s; position:relative; -webkit-appearance:none; cursor:pointer; text-transform:uppercase}
+.btn {display:block; margin:0; padding:0 32px; overflow:visible; outline:none; vertical-align:top; height:40px; text-decoration:none; background:#fde8e9; color:#313131; border:1px solid #ec1d22; border-radius:0; font:11px/38px Tahoma, Geneva, sans-serif; letter-spacing:0.07em; text-align:center; transition:all 0.2s; position:relative; -webkit-appearance:none; cursor:pointer; text-transform:uppercase}
 .fonts-loaded .btn {font-family:Roboto, sans-serif}
 .btn:hover {background:#ec1d22; color:#fff; text-decoration:none}
 .btn:active {background:#e43e42; color:#fff}
@@ -77,11 +72,11 @@ blockquote {margin:44px 0; padding:0 0 0 40px; border-left:2px solid #ec1d22}
 .wrapper form {margin:44px 0; padding:0}
 
 .form-field {margin:23px 0}
-.form-label {font-size:14px; line-height:26px; color:#595959}
+.form-label {font-size:13px; line-height:26px; color:#595959}
 .form-label span {color:#ec1d22}
 .form-input {position:relative}
 .form-input input,
-.form-input textarea {vertical-align:top; box-sizing:border-box; margin:0; padding:5px 12px; outline:none; width:100%; height:36px; border:1px solid #d9d9d9; -webkit-appearance:none; color:#040404; font:14px/24px Arial, sans-serif; border-radius:0}
+.form-input textarea {vertical-align:top; box-sizing:border-box; margin:0; padding:5px 12px; outline:none; width:100%; height:36px; border:1px solid #d9d9d9; -webkit-appearance:none; color:#040404; font:13px/24px Arial, sans-serif; border-radius:0}
 .fonts-loaded .form-input input,
 .fonts-loaded .form-input textarea {font-family:Roboto, sans-serif}
 .form-input textarea {height:auto; overflow:auto; resize:none}
@@ -95,7 +90,7 @@ blockquote {margin:44px 0; padding:0 0 0 40px; border-left:2px solid #ec1d22}
 .form-input textarea.error {border-color:#ec1d22}
 .form-input label.error {display:none !important}
 
-.form-checkbox {margin:4px 0; font-weight:normal; font-size:14px; line-height:24px; color:#040404}
+.form-checkbox {margin:4px 0; font-weight:normal; font-size:13px; line-height:24px; color:#040404}
 .form-checkbox::after {content:""; display:block; clear:both}
 .form-checkbox label {float:left; display:block; cursor:pointer}
 .form-checkbox input {display:none}
@@ -107,7 +102,7 @@ blockquote {margin:44px 0; padding:0 0 0 40px; border-left:2px solid #ec1d22}
 .form-checkbox input:checked+label.error+span::after {content:""; display:block; width:5px; height:5px; background:#ec1d22; position:absolute; left:2px; top:9px}
 .form-checkbox label.error {display:none !important}
 
-.form-radio {margin:4px 0; font-weight:normal; font-size:14px; line-height:24px; color:#040404}
+.form-radio {margin:4px 0; font-weight:normal; font-size:13px; line-height:24px; color:#040404}
 .form-radio::after {content:""; display:block; clear:both}
 .form-radio label {float:left; display:block; cursor:pointer}
 .form-radio input {display:none}
@@ -119,7 +114,7 @@ blockquote {margin:44px 0; padding:0 0 0 40px; border-left:2px solid #ec1d22}
 .form-radio input:checked+label.error+span::after {content:""; display:block; width:5px; height:5px; background:#ec1d22; border-radius:50%; position:absolute; left:2px; top:9px}
 .form-radio label.error {display:none !important}
 
-.form-select select {vertical-align:top; box-sizing:border-box; margin:0; padding:5px 12px; outline:none; width:100%; height:36px; border:1px solid #d9d9d9; -webkit-appearance:none; color:#040404; font:14px/24px Arial, sans-serif; border-radius:0}
+.form-select select {vertical-align:top; box-sizing:border-box; margin:0; padding:5px 12px; outline:none; width:100%; height:36px; border:1px solid #d9d9d9; -webkit-appearance:none; color:#040404; font:13px/24px Arial, sans-serif; border-radius:0}
 
 .form-file-input {width:182px; height:40px; position:relative; overflow:hidden}
 .form-file-input input {height:200px; position:absolute; top:0; right:0; opacity:0; cursor:pointer; font-size:200px; background:url(../images/blank.gif); -webkit-appearance:none; z-index:1}
@@ -131,16 +126,16 @@ blockquote {margin:44px 0; padding:0 0 0 40px; border-left:2px solid #ec1d22}
 .form-file-input:hover .form-file-placeholder {background:#ec1d22; color:#fff !important}
 .form-file-input:active .form-file-placeholder {background:#e43e42; color:#fff !important}
 .form-file-input:hover .form-file-placeholder::before {background:url(../images/file.svg) no-repeat}
-.form-file-name {display:none; position:absolute; left:0; top:0; right:0; bottom:0; background:#fde8e9; border:1px solid #ec1d22; padding:0 10px 0 48px; font-size:12px; font-weight:normal; line-height:38px; text-transform:uppercase; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:#313131; letter-spacing:0.07em}
+.form-file-name {display:none; position:absolute; left:0; top:0; right:0; bottom:0; background:#fde8e9; border:1px solid #ec1d22; padding:0 10px 0 48px; font-size:11px; font-weight:normal; line-height:38px; text-transform:uppercase; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:#313131; letter-spacing:0.07em}
 .form-file-name::before {content:""; display:block; width:19px; height:17px; background:url(../images/file-success.svg) no-repeat; position:absolute; left:16px; top:10px}
 .form-file-input.success .form-file-name {display:block}
 .form-file-input:hover .form-file-name {background:#ec1d22; color:#fff}
 .form-file-input:active .form-file-name {background:#e43e42; color:#fff}
 .form-file-input:hover .form-file-name::before {background:url(../images/file.svg) no-repeat}
 
-.form-success {margin:23px 0; font-size:16px; line-height:24px; color:#595959}
+.form-success {margin:23px 0; font-size:13px; line-height:24px; color:#595959}
 .form-success::before {content:""; display:inline-block; vertical-align:middle; margin:-2px 11px 0 0; width:23px; height:16px; background:url(../images/form-success.svg) no-repeat}
-.form-error {margin:23px 0; font-size:16px; line-height:24px; color:#595959}
+.form-error {margin:23px 0; font-size:13px; line-height:24px; color:#595959}
 .form-error::before {content:""; display:inline-block; vertical-align:middle; margin:-2px 11px 0 0; width:17px; height:18px; background:url(../images/form-error.svg) no-repeat}
 
 .form-ctrl {margin:33px 0 0 0}
@@ -447,7 +442,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .menu-subscribe-input input.error {border-color:#ec1d22}
 .menu-subscribe-input label.error {display:none !important}
 .menu-subscribe-submit {position:absolute; right:0; top:0; width:162px}
-.menu-subscribe-submit input {display:block; margin:0; padding:0; overflow:visible; outline:none; vertical-align:top; width:100%; height:40px; text-decoration:none; background:#ec1d22; color:#fff; border:none; border-radius:0; font:500 14px/42px Tahoma, Geneva, sans-serif; letter-spacing:0.07em; text-align:center; transition:all 0.2s; position:relative; -webkit-appearance:none; cursor:pointer; text-transform:uppercase}
+.menu-subscribe-submit input {display:block; margin:0; padding:0; overflow:visible; outline:none; vertical-align:top; width:100%; height:40px; text-decoration:none; background:#ec1d22; color:#fff; border:none; border-radius:0; font:500 13px/40px Tahoma, Geneva, sans-serif; letter-spacing:0.07em; text-align:center; transition:all 0.2s; position:relative; -webkit-appearance:none; cursor:pointer; text-transform:uppercase}
 .fonts-loaded .menu-subscribe-submit input {font-family:Roboto, sans-serif}
 .menu-subscribe-submit input:hover {background:#e43e42}
 .menu-subscribe .form-checkbox {float:left; clear:left; width:558px; margin:11px 0 0 0; font-size:12px; line-height:20px; font-weight:300; color:#595959}
@@ -477,7 +472,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
     .menu-subscribe .form-checkbox span::before {width:19px; height:19px; top:0}
     .menu-subscribe .form-checkbox span::before {background-image:url(../images/subscribe-checkbox-mobile.svg)}
     .menu-subscribe-submit {position:relative; right:auto; top:auto; float:none; width:153px; margin:32px 0 0 0}
-    .menu-subscribe-submit input {font-size:12px; font-weight:normal}
+    .menu-subscribe-submit input {font-size:11px; font-weight:normal}
 }
 
 .menu-social {float:right; padding:84px 0 0 0; font-size:0; line-height:0; letter-spacing:-1px}
@@ -634,9 +629,9 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .main-subscribe-input input:-ms-input-placeholder {opacity:1; color:#979797}
 .main-subscribe-input input.error {border-color:#ec1d22}
 .main-subscribe-input label.error {display:none !important}
-.main-subscribe .form-checkbox {margin:12px 0 0 0; font-size:12px; line-height:17px; font-weight:300; color:#fff}
+.main-subscribe .form-checkbox {margin:17px 0 0 0; font-size:14px; line-height:24px; font-weight:300; color:#fff}
 .main-subscribe .form-checkbox span {padding:0 0 0 24px}
-.main-subscribe .form-checkbox span::before {width:14px; height:14px; border:1px solid #fff; top:1px; background:url(../images/main-subscribe-checkbox.svg) no-repeat -999px -999px}
+.main-subscribe .form-checkbox span::before {width:14px; height:14px; border:1px solid #fff; top:3px; background:url(../images/main-subscribe-checkbox.svg) no-repeat -999px -999px}
 .main-subscribe .form-checkbox input.error+span::before,
 .main-subscribe .form-checkbox input.error+label.error+span::before {border:2px solid #ec1d22}
 .main-subscribe .form-checkbox input.error+span,
@@ -646,18 +641,18 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .main-subscribe .form-checkbox input:checked+label.error+span::after {display:none}
 .main-subscribe .form-checkbox input:checked+span::before,
 .main-subscribe .form-checkbox input:checked+label.error+span::before {background-position:center}
-.main-subscribe .form-checkbox span a {color:#fff; text-decoration:none; border-bottom:1px solid #4d4d4d; white-space:nowrap}
+.main-subscribe .form-checkbox span a {color:#fff; text-decoration:none; border-bottom:1px dotted #fff}
 .main-subscribe .form-checkbox span a:hover {border-bottom-color:transparent}
 .main-subscribe-submit {margin:32px 0 0 0; width:146px}
-.main-subscribe-submit input {display:block; margin:0; padding:0; overflow:visible; outline:none; vertical-align:top; width:100%; height:40px; text-decoration:none; background:#ec1d22; color:#fff; border:none; border-radius:0; font:500 12px/42px Tahoma, Geneva, sans-serif; letter-spacing:0.07em; text-align:center; transition:all 0.2s; position:relative; -webkit-appearance:none; cursor:pointer; text-transform:uppercase}
+.main-subscribe-submit input {display:block; margin:0; padding:0; overflow:visible; outline:none; vertical-align:top; width:100%; height:40px; text-decoration:none; background:#ec1d22; color:#fff; border:none; border-radius:0; font:500 11px/40px Tahoma, Geneva, sans-serif; letter-spacing:0.07em; text-align:center; transition:all 0.2s; position:relative; -webkit-appearance:none; cursor:pointer; text-transform:uppercase}
 .fonts-loaded .main-subscribe-submit input {font-family:Roboto, sans-serif}
 .main-subscribe-submit input:hover {background:#e43e42}
 
 @media screen and (max-width:1159px) {
     .main-subscribe {margin:74px 0 0 0; padding:31px 37px 29px 37px}
-    .main-subscribe .form-checkbox {float:none; width:auto; margin:10px 0 0 0; font-size:14px; line-height:15px}
+    .main-subscribe .form-checkbox {float:none; width:auto; margin:7px 0 0 0; font-size:14px}
     .main-subscribe .form-checkbox span {padding:0 0 0 30px}
-    .main-subscribe .form-checkbox span::before {width:19px; height:19px; top:-3px}
+    .main-subscribe .form-checkbox span::before {width:19px; height:19px; top:0}
     .main-subscribe .form-checkbox span::before {background-image:url(../images/main-subscribe-checkbox-mobile.svg)}
     .main-subscribe-submit {margin:24px 0 0 0}
     .main-subscribe-submit input {font-weight:normal}
@@ -1130,7 +1125,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
     .article-info-item-authors span:hover strong {display:block}
 }
 @media screen and (max-width:1159px) {
-    .article-info-item-authors span.open strong {display:block; width:290px}
+    .article-info-item-authors span.open strong {display:block}
     .article-info-item-authors strong::after {content:""; display:block; width:8px; height:8px; position:absolute; right:5px; top:5px; background:url(../images/window-close.svg) no-repeat; background-size:100%}
 }
 .article-info-item-authors strong em {font-size:14px; line-height:16px; color:#797979; font-style:normal; display:block; padding:0 0 4px 0}
@@ -1151,11 +1146,9 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
     .article-title {font-size:21px; line-height:28px}
     .article-photo {margin:28px -40px 0 -40px}
     .article-info {display:block}
-    .article-info-item {display:block; margin:8px 0 0 0; padding:0; font-size:16px; line-height:23px}
+    .article-info-item {display:block; margin:8px 0 0 0; padding:0}
     .article-social .btn {width:125px; padding:0 0 0 10px; font-size:9px; font-weight:500}
     .article-social .btn:last-child {margin:0}
-    .article-info-item-authors strong {font-size:16px; line-height:23px; width:290px; margin-left:-145px; padding:20px}
-    .article-info-item-authors span em {font-size:18px; line-height:23px}
 }
 
 .article-theme {margin:77px 0}
@@ -1184,7 +1177,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .article-subscribe-input input:-ms-input-placeholder {opacity:1; color:#979797}
 .article-subscribe-input input.error {border-color:#ec1d22}
 .article-subscribe-input label.error {display:none !important}
-.article-subscribe .form-checkbox {float:left; margin:11px 0 0 0; font-size:12px; line-height:20px; font-weight:300; color:#fff}
+.article-subscribe .form-checkbox {float:left; margin:17px 0 0 0; font-size:12px; line-height:20px; font-weight:300; color:#fff}
 .article-subscribe .form-checkbox span {padding:0 0 0 24px}
 .article-subscribe .form-checkbox span::before {width:14px; height:14px; border:1px solid #fff; top:2px; background:url(../images/main-subscribe-checkbox.svg) no-repeat -999px -999px}
 .article-subscribe .form-checkbox input.error+span::before,
@@ -1196,10 +1189,10 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .article-subscribe .form-checkbox input:checked+label.error+span::after {display:none}
 .article-subscribe .form-checkbox input:checked+span::before,
 .article-subscribe .form-checkbox input:checked+label.error+span::before {background-position:center}
-.article-subscribe .form-checkbox span a {color:#fff; text-decoration:none; border-bottom:1px solid #c4c4c4}
+.article-subscribe .form-checkbox span a {color:#fff; text-decoration:none; border-bottom:1px dotted #fff}
 .article-subscribe .form-checkbox span a:hover {border-bottom-color:transparent}
 .article-subscribe-submit {position:absolute; right:0; top:0; width:162px}
-.article-subscribe-submit input {display:block; margin:0; padding:0; overflow:visible; outline:none; vertical-align:top; width:100%; height:40px; text-decoration:none; background:#ec1d22; color:#fff; border:none; border-radius:0; font:500 14px/42px Tahoma, Geneva, sans-serif; letter-spacing:0.07em; text-align:center; transition:all 0.2s; position:relative; -webkit-appearance:none; cursor:pointer; text-transform:uppercase}
+.article-subscribe-submit input {display:block; margin:0; padding:0; overflow:visible; outline:none; vertical-align:top; width:100%; height:40px; text-decoration:none; background:#ec1d22; color:#fff; border:none; border-radius:0; font:500 11px/40px Tahoma, Geneva, sans-serif; letter-spacing:0.07em; text-align:center; transition:all 0.2s; position:relative; -webkit-appearance:none; cursor:pointer; text-transform:uppercase}
 .fonts-loaded .article-subscribe-submit input {font-family:Roboto, sans-serif}
 .article-subscribe-submit input:hover {background:#e43e42}
 
@@ -1211,12 +1204,12 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
     .article-subscribe-title {font-size:19px}
     .article-subscribe-input {float:none; width:auto}
     .article-subscribe form {width:auto}
-    .article-subscribe .form-checkbox {float:none; width:auto; margin:10px 0 0 0; font-size:14px; line-height:15px}
+    .article-subscribe .form-checkbox {float:none; width:auto; margin:7px 0 0 0; font-size:14px}
     .article-subscribe .form-checkbox span {padding:0 0 0 30px}
-    .article-subscribe .form-checkbox span::before {width:19px; height:19px; top:-2px}
+    .article-subscribe .form-checkbox span::before {width:19px; height:19px; top:0}
     .article-subscribe .form-checkbox span::before {background-image:url(../images/main-subscribe-checkbox-mobile.svg)}
     .article-subscribe-submit {position:relative; right:auto; top:auto; width:153px; padding:24px 0 0 0}
-    .article-subscribe-submit input {font-weight:normal; font-size:12px}
+    .article-subscribe-submit input {font-weight:normal}
 }
 
 .article-side {float:right; width:300px; margin:8px 0 0 0}
@@ -1404,10 +1397,10 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
     .gallery-list .slick-dots li.slick-active button {opacity:1}
 }
 
-.doc-link-block {margin:6px 0; line-height:19px}
-.doc-link {font-weight:normal; font-size:12px; letter-spacing:0.07em; text-transform:uppercase}
+.doc-link-block {margin:5px 0; line-height:19px}
+.doc-link {font-weight:normal; font-size:11px; letter-spacing:0.07em; text-transform:uppercase}
 .doc-link:hover {text-decoration:none; color:#e43e42}
-.doc-link span {display:inline-block; vertical-align:middle; text-transform:uppercase; margin:-3px 10px 0 0; width:31px; height:14px; background:#ec1d22; color:#fff; text-align:center; font-size:9px; font-weight:500; letter-spacing:0.06em; line-height:14px; border-radius:3px}
+.doc-link span {display:inline-block; vertical-align:middle; text-transform:uppercase; margin:-2px 10px 0 0; width:23px; height:13px; background:#ec1d22; color:#fff; text-align:center; font-size:7px; font-weight:bold; letter-spacing:0.06em; line-height:13px; border-radius:3px}
 .doc-link:hover span {background:#e43e42}
 
 .interview-question {font-weight:500; margin:23px 0}
@@ -1520,7 +1513,7 @@ footer {background:#f3f3f3; margin:85px 0 0 0; padding:51px 0 40px 0}
 .footer-subscribe-input input.error {border-color:#ec1d22}
 .footer-subscribe-input label.error {display:none !important}
 .footer-subscribe-submit {position:absolute; right:0; top:0; width:162px}
-.footer-subscribe-submit input {display:block; margin:0; padding:0; overflow:visible; outline:none; vertical-align:top; width:100%; height:40px; text-decoration:none; background:#ec1d22; color:#fff; border:none; border-radius:0; font:500 14px/42px Tahoma, Geneva, sans-serif; letter-spacing:0.07em; text-align:center; transition:all 0.2s; position:relative; -webkit-appearance:none; cursor:pointer; text-transform:uppercase}
+.footer-subscribe-submit input {display:block; margin:0; padding:0; overflow:visible; outline:none; vertical-align:top; width:100%; height:40px; text-decoration:none; background:#ec1d22; color:#fff; border:none; border-radius:0; font:500 13px/40px Tahoma, Geneva, sans-serif; letter-spacing:0.07em; text-align:center; transition:all 0.2s; position:relative; -webkit-appearance:none; cursor:pointer; text-transform:uppercase}
 .fonts-loaded .footer-subscribe-submit input {font-family:Roboto, sans-serif}
 .footer-subscribe-submit input:hover {background:#e43e42}
 .footer-subscribe .form-checkbox {float:left; clear:left; width:558px; margin:11px 0 0 0; font-size:12px; line-height:20px; font-weight:300; color:#595959}
@@ -1548,7 +1541,7 @@ footer {background:#f3f3f3; margin:85px 0 0 0; padding:51px 0 40px 0}
     .footer-subscribe .form-checkbox span::before {width:19px; height:19px; top:0}
     .footer-subscribe .form-checkbox span::before {background-image:url(../images/subscribe-checkbox-mobile.svg)}
     .footer-subscribe-submit {position:relative; right:auto; top:auto; float:none; width:153px; margin:36px 0 0 0}
-    .footer-subscribe-submit input {font-size:12px; font-weight:normal}
+    .footer-subscribe-submit input {font-size:11px; font-weight:normal}
 }
 
 .footer-content {border-top:1px solid #d7d7d7; margin:46px 0 0 0; padding:41px 0 0 0}
@@ -1793,9 +1786,15 @@ footer {background:#f3f3f3; margin:85px 0 0 0; padding:51px 0 40px 0}
 
 .to-link {display:inline}
 
-.article-subscribe-social {margin:34px 0; background:#fff url(../images/article-subscribe-social.png) no-repeat right bottom; box-shadow:0px 4px 40px rgba(70, 70, 70, 0.1); border-radius:2px; padding:48px 160px 46px 48px; font-size:16px; line-height:27px; color:#101010}
-.article-subscribe-social a {color:#ec1d22; font-weight:normal; white-space:nowrap}
+.article-subscribe-social {margin:34px 0; background:#fff url(../images/article-subscribe-social.png) no-repeat right bottom; box-shadow:0px 4px 40px rgba(70, 70, 70, 0.1); border-radius:2px; padding:48px 124px 46px 48px; font-size:16px; line-height:27px; color:#101010}
+.article-subscribe-social a {color:#ec1d22; font-weight:normal}
+.article-subscribe-social em {font-style:normal}
+.article-subscribe-social img {display:none}
 
 @media screen and (max-width:1159px) {
-    .article-subscribe-social {margin:41px 0; font-size:20px; line-height:34px; font-weight:300; padding:32px 40px 61px 40px}
+    .article-subscribe-social {margin:41px 0; background:#fff; border:1px solid #d7d7d7; border-radius:10px; font-size:20px; line-height:32px; font-weight:normal; padding:34px 40px 39px 40px}
+    .article-subscribe-social span {display:block; margin:4px 0 19px 0}
+    .article-subscribe-social span+em+span {margin-top:-10px}
+    .article-subscribe-social img {display:inline-block; vertical-align:middle; margin:-4px 10px 0 0}
+    .article-subscribe-social em {display:none}
 }
