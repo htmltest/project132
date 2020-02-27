@@ -1304,6 +1304,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
     .magazine-archive-years .slick-list {overflow:visible}
     .magazine-archive-years a {float:none; display:inline-block; vertical-align:top; font-size:19px; line-height:23px; letter-spacing:0; font-weight:normal; width:80px; margin:0}
     .magazine-archive-item {width:50%}
+    .magazine-archive-item-preview-text {display:none}
 }
 
 .magazine-marketing {margin:28px 0 0 0}
