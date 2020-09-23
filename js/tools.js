@@ -487,6 +487,32 @@ $(document).ready(function() {
         }
     });
 
+    $('body').on('click', '.main-partners-item > a', function(e) {
+        if ($(window).width() < 1170) {
+            var curBlock = $(this).parent();
+            if (curBlock.find('.main-partners-item-window').length > 0) {
+                if (curBlock.hasClass('open')) {
+                    curBlock.removeClass('open');
+                } else {
+                    $('.main-partners-item.open').removeClass('open');
+                    curBlock.addClass('open');
+                }
+                e.preventDefault();
+            }
+        }
+    });
+
+    $('body').on('click', '.main-partners-item-window-close', function(e) {
+        $('.main-partners-item.open').removeClass('open');
+        e.preventDefault();
+    });
+
+    $(document).click(function(e) {
+        if ($(e.target).parents().filter('.main-partners-item').length == 0) {
+            $('.main-partners-item.open').removeClass('open');
+        }
+    });
+
 });
 
 $(window).on('load', function() {
