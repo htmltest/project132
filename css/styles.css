@@ -1801,7 +1801,7 @@ footer {background:#f3f3f3; margin:85px 0 0 0; padding:51px 0 40px 0}
     .article-subscribe-social {margin:41px 0; font-size:20px; line-height:34px; font-weight:300; padding:32px 40px 61px 40px}
 }
 
-.main-partners-list {font-size:0; line-height:0; letter-spacing:-1px; margin:0 -10px}
+.main-partners-list {font-size:0; line-height:0; letter-spacing:-1px; margin:30px -10px 0 -10px}
 .main-partners-item {display:inline-block; vertical-align:middle; width:25%; text-align:center; position:relative}
 .main-partners-item a {display:block; padding:20px 10px}
 .main-partners-item a img {transition:all 0.2s}
