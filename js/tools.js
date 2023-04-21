@@ -513,6 +513,108 @@ $(document).ready(function() {
         }
     });
 
+    $('.guide-sort-title').click(function() {
+        $('.guide-sort').toggleClass('open');
+    });
+
+    $(document).click(function(e) {
+        if ($(e.target).parents().filter('.guide-sort').length == 0) {
+            $('.guide-sort').removeClass('open');
+        }
+    });
+
+    $('.guide-sort-item a').click(function(e) {
+        var curItem = $(this).parent();
+        var curGroup = curItem.parent();
+        if (!curItem.hasClass('active')) {
+            $('.guide-sort-item.active').removeClass('active');
+            curItem.addClass('active');
+            $('.guide-sort-group.active').removeClass('active');
+            curGroup.addClass('active');
+        } else {
+            curGroup.find('.guide-sort-item').addClass('active dir-active');
+            curItem.removeClass('active dir-active');
+        }
+        $('.guide-sort').removeClass('open');
+        filterGuide();
+        e.preventDefault();
+    });
+
+    $('.guide-filter-search .form-input input').keyup(function() {
+        if ($(window).width() > 1159) {
+            filterGuide();
+        }
+    });
+
+    $('.guide-filter-type-list .form-radio input').change(function() {
+        if ($(window).width() > 1159) {
+            filterGuide();
+        }
+    });
+
+    $('.guide-filter-mobile-link').click(function() {
+        var curWidth = $(window).width();
+        var curScroll = $(window).scrollTop();
+        $('.wrapper').data('curScroll', curScroll);
+        $('html').addClass('guide-filter-open');
+        if (curWidth < 480) {
+            curWidth = 480;
+        }
+        $('meta[name="viewport"]').attr('content', 'width=' + curWidth);
+    });
+
+    $('.guide-filter-mobile-close').click(function(e) {
+        $('html').removeClass('guide-filter-open');
+        $('meta[name="viewport"]').attr('content', 'width=device-width');
+        $(window).scrollTop($('.wrapper').data('curScroll'));
+        e.preventDefault();
+    });
+
+    $('.guide-filter-mobile-reset').click(function(e) {
+        $('.guide-filter-search .form-input input').val('');
+        $('.guide-filter-type-list .form-radio input').eq(0).prop('checked', true);
+        e.preventDefault();
+    });
+
+    $('.guide-filter-submit a').click(function(e) {
+        $('.guide-filter-mobile-close').trigger('click');
+        filterGuide();
+        e.preventDefault();
+    });
+
+    $('.guide-filter form').each(function() {
+        var curForm = $(this);
+        var validator = curForm.validate();
+        if (validator) {
+            validator.destroy();
+        }
+        curForm.validate({
+            ignore: '',
+            submitHandler: function(form) {
+                filterGuide();
+            }
+        });
+    });
+
+    $('body').on('click', '.guide-list-container .pager a', function(e) {
+        var curLink = $(this);
+        if (!curLink.hasClass('active')) {
+            $('.guide-list-container .pager a.active').removeClass('active');
+            curLink.addClass('active');
+            if (e.originalEvent === undefined) {
+                filterGuide();
+            } else {
+                filterGuide(true);
+            }
+        }
+        e.preventDefault();
+    });
+
+    $('body').on('click', '[data-href]', function(e) {
+        window.location = $(this).attr('data-href');
+        e.preventDefault();
+    });
+
 });
 
 $(window).on('load', function() {
@@ -929,4 +1031,40 @@ if ('IntersectionObserver' in window) {
         lazyImage.src = lazyImage.dataset.src
         lazyImage.classList.remove('lzy_img');
     }
+}
+
+function filterGuide(isScroll) {
+    $('.guide-list-container').addClass('loading');
+    var curForm = $('.guide-filter form');
+    var curData = curForm.serialize();
+    curData += '&page=' + $('.pager a.active').attr('data-value');
+    curData += '&sort=' + $('.guide-sort-item.active').attr('data-value') + '&sortdir=' + $('.guide-sort-item.active').attr('data-dir');
+    var countParameters = 0;
+    if ($('.guide-filter-search .form-input input').val() != '') {
+        countParameters++;
+    }
+    if (!$('.guide-filter-type .form-radio input').eq(0).prop('checked')) {
+        countParameters++;
+    }
+    $('.guide-filter-mobile-link span').remove();
+    if (countParameters > 0) {
+        $('.guide-filter-mobile-link').append('<span>' + countParameters + '</span>');
+    }
+    $.ajax({
+        type: 'POST',
+        url: curForm.attr('action'),
+        dataType: 'html',
+        data: curData,
+        cache: false
+    }).done(function(html) {
+        $('.guide-list-container .main-news-list').html($(html).find('.main-news-list').html());
+        $('.guide-list-container .pager').html($(html).find('.pager').html());
+        $('.guide-header-status-from').html($(html).find('.main-news-list').attr('data-statusfrom'));
+        $('.guide-header-status-to').html($(html).find('.main-news-list').attr('data-statusto'));
+        $('.guide-header-status-count').html($(html).find('.main-news-list').attr('data-statuscount'));
+        $('.guide-list-container').removeClass('loading');
+        if (isScroll) {
+            $('html, body').animate({'scrollTop': $('.guide-filter').offset().top});
+        }
+    });
 }
