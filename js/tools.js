@@ -836,6 +836,22 @@ function initForm(curForm) {
         curField.addClass('success');
     });
 
+    curForm.find('.captcha-container').each(function() {
+        if ($('script#smartCaptchaScript').length == 0) {
+            $('body').append('<script src="https://captcha-api.yandex.ru/captcha.js?render=onload&onload=smartCaptchaLoad" defer id="smartCaptchaScript"></script>');
+        } else {
+            if (window.smartCaptcha) {
+                var curID = window.smartCaptcha.render(this, {
+                    sitekey: smartCaptchaKey,
+                    callback: smartCaptchaCallback,
+                    invisible: true,
+                    hideShield: true,
+                });
+                $(this).attr('data-smartid', curID);
+            }
+        }
+    });
+
     curForm.validate({
         ignore: '',
         showErrors: function(errorMap, errorList) {
@@ -856,20 +872,66 @@ function initForm(curForm) {
             this.defaultShowErrors();
         },
         submitHandler: function(form) {
-            if ($(form).hasClass('ajax-form')) {
-                var formData = new FormData(form);
+            var smartCaptchaWaiting = false;
+            curForm.find('.captcha-container').each(function() {
+                if (curForm.attr('form-smartcaptchawaiting') != 'true') {
+                    var curBlock = $(this);
+                    var curInput = curBlock.find('input[name="smart-token"]');
+                    curInput.removeAttr('value');
+                    smartCaptchaWaiting = true;
+                    $('form[form-smartcaptchawaiting]').removeAttr('form-smartcaptchawaiting');
+                    curForm.attr('form-smartcaptchawaiting', 'false');
 
-                if ($(form).find('[type=file]').length != 0) {
-                    var file = $(form).find('[type=file]')[0].files[0];
-                    formData.append('file', file);
+                    if (!window.smartCaptcha) {
+                        alert('Сервис временно недоступен');
+                        return;
+                    }
+                    var curID = $(this).attr('data-smartid');
+                    window.smartCaptcha.execute(curID);
+                } else {
+                    curForm.removeAttr('form-smartcaptchawaiting');
                 }
+            });
 
-                windowOpen($(form).attr('action'), formData);
-            } else {
-                form.submit();
+            if (!smartCaptchaWaiting) {
+
+                if ($(form).hasClass('ajax-form')) {
+                    var formData = new FormData(form);
+
+                    if ($(form).find('[type=file]').length != 0) {
+                        var file = $(form).find('[type=file]')[0].files[0];
+                        formData.append('file', file);
+                    }
+
+                    windowOpen($(form).attr('action'), formData);
+                } else {
+                    form.submit();
+                }
             }
         }
     });
+}
+
+var smartCaptchaKey = 'uahGSHTKJqjaJ0ezlhjrbOYH4OxS6zzL9CZ47OgY';
+
+function smartCaptchaLoad() {
+    $('.captcha-container').each(function() {
+        if (!window.smartCaptcha) {
+            return;
+        }
+        var curID = window.smartCaptcha.render(this, {
+            sitekey: smartCaptchaKey,
+            callback: smartCaptchaCallback,
+            invisible: true,
+            hideShield: true,
+        });
+        $(this).attr('data-smartid', curID);
+    });
+}
+
+function smartCaptchaCallback(token) {
+    $('form[form-smartcaptchawaiting]').attr('form-smartcaptchawaiting', 'true');
+    $('form[form-smartcaptchawaiting] [type="submit"]').trigger('click');
 }
 
 function windowOpen(linkWindow, dataWindow) {

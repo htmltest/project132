@@ -233,6 +233,7 @@
                                     <form action="windows/subscribe.html" method="post" class="ajax-form">
                                         <div class="menu-subscribe-input"><input type="text" name="email" value="" placeholder="Ваш адрес электронной почты" class="required email" /></div>
                                         <div class="form-checkbox"><label><input type="checkbox" name="policy" class="required" /><span>Я принимаю <a href="#">пользовательское соглашение</a></span></label></div>
+                                        <div class="captcha-container"></div>
                                         <div class="menu-subscribe-submit"><input type="submit" value="Подписаться" /></div>
                                     </form>
                                 </div>
@@ -312,6 +313,7 @@
                             <form action="windows/subscribe.html" method="post" class="ajax-form">
                                 <div class="main-subscribe-input"><input type="text" name="email" value="" placeholder="Ваш e-mail" class="required email" /></div>
                                 <div class="form-checkbox"><label><input type="checkbox" name="policy" class="required" /><span>Я принимаю <a href="#">пользовательское соглашение</a></span></label></div>
+                                <div class="captcha-container"></div>
                                 <div class="main-subscribe-submit"><input type="submit" value="Подписаться" /></div>
                             </form>
                         </div>
@@ -436,6 +438,7 @@
                                     <form action="windows/subscribe.html" method="post" class="ajax-form">
                                         <div class="main-subscribe-input"><input type="text" name="email" value="" placeholder="Ваш e-mail" class="required email" /></div>
                                         <div class="form-checkbox"><label><input type="checkbox" name="policy" class="required" /><span>Я принимаю <a href="#">пользовательское соглашение</a></span></label></div>
+                                        <div class="captcha-container"></div>
                                         <div class="main-subscribe-submit"><input type="submit" value="Подписаться" /></div>
                                     </form>
                                 </div>
@@ -1046,13 +1049,24 @@
                 <div class="container">
                     <div class="footer-subscribe">
                         <div class="footer-subscribe-title">Все актуальные новости fashion-индустрии раз в неделю</div>
-                        <form action="windows/subscribe.html" method="post" class="ajax-form">
+                        <form action="https://cp.unisender.com/ru/subscribe?hash=6zgokseq1r96mk1pek3awam8gy897nfai45aepycpy9kmabdqapto" method="post" name="subscribtion_form">
                             <div class="footer-subscribe-input"><input type="text" name="email" value="" placeholder="Ваш адрес электронной почты" class="required email" /></div>
                             <div class="form-checkbox"><label><input type="checkbox" name="policy" class="required" /><span>Я принимаю <a href="#">пользовательское соглашение</a></span></label></div>
+                            <div class="captcha-container"></div>
+                            <input type="hidden" name="charset" value="UTF-8">
+                            <input type="hidden" name="default_list_id" value="1">
+                            <input type="hidden" name="list_ids[]" value="1">
+                            <input type="hidden" name="list_ids[]" value="37">
+                            <input type="hidden" name="list_ids[]" value="39">
+                            <input type="hidden" name="list_ids[]" value="109">
+                            <input type="hidden" name="list_ids[]" value="111">
+                            <input type="hidden" name="list_ids[]" value="144">
+                            <input type="hidden" name="overwrite" value="2">
+                            <input type="hidden" name="is_v5" value="1">
                             <div class="footer-subscribe-submit"><input type="submit" value="Подписаться" /></div>
                         </form>
                     </div>
-
+                    
                     <div class="footer-content">
                         <div class="footer-side">
                             <div class="footer-logo"></div>
@@ -1101,7 +1115,7 @@
                     <div class="footer-bottom">
                         <div class="footer-copyrights">
                             <div class="footer-copyrights-title">© 2013-2019 PROfashion</div>
-                            <div class="footer-copyrights-text">Все права защищены. Использование материалов разрешено только при наличии активной ссылки на источник.</div>
+                            <div class="footer-copyrights-text">Все права защищены. Использование материалов разрешено только при наличии активной ссылки на источник.<br> Этот сайт использует <a href="https://yandex.ru/legal/smartcaptcha_notice/" target="_blank">Yandex SmartCaptcha</a>.</div>
                         </div>
                         <div class="footer-developer">Создание сайта - <a href="http://bilingo.ru" target="_blank">Bilingo.ru</a></div>
                         <div class="footer-age"><div class="footer-age-inner">16+</div></div>
