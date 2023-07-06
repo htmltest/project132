@@ -643,7 +643,11 @@ function popupCenter(url, title) {
 $(window).on('load resize scroll', function() {
     var curScroll = $(window).scrollTop();
 
-    if (curScroll > $('header').offset().top + $('header').height()) {
+    var headerHeight = 132;
+    if ($(window).width() < 1160) {
+        headerHeight = 55;
+    }
+    if (curScroll > $('header').offset().top + headerHeight) {
         $('html').addClass('fixed');
     } else {
         $('html').removeClass('fixed');
