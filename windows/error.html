@@ -1,0 +1,33 @@
+<div class="window-inner">
+    <div class="window-title">Сообщить о неточности</div>
+    <div class="window-form">
+        <form action="windows/subscribe-success.html" method="post" class="ajax-form">
+            <div class="form-field">
+                <div class="form-label">Ваше имя <span>*</span></div>
+                <div class="form-input"><input type="text" name="name" value="" class="required" /></div>
+            </div>
+
+            <div class="form-field">
+                <div class="form-label">Электронный адрес <span>*</span></div>
+                <div class="form-input"><input type="text" name="email" value="" class="required email" /></div>
+            </div>
+
+            <div class="form-field">
+                <div class="form-label">Ваш коментарий <span>*</span></div>
+                <div class="form-input"><textarea name="message" rows="5" cols="10" class="required"></textarea></div>
+            </div>
+
+            <div class="form-field window-policy-checkbox">
+                <div class="form-checkbox"><label><input type="checkbox" name="policy" class="required" checked="checked" /><span>Я принимаю <a href="#">пользовательское соглашение</a></span></label></div>
+            </div>
+
+            <div class="captcha-container"></div>
+
+            <div class="window-ctrl">
+                <div class="form-submit"><input type="submit" value="Отправить" class="btn" /></div>
+            </div>
+
+            <div class="window-policy-error">Пожалуйста, подтвердите свое согласие на обработку персональных данных</div>
+        </form>
+    </div>
+</div>

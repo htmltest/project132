@@ -437,8 +437,10 @@ $(document).ready(function() {
         });
 
         $('.main-mini').each(function() {
-            $(this).find('.main-mini-type-links').css({'top': $(this).find('.main-mini-type').offset().top - $(this).offset().top, 'opacity': 1});
-            $(this).find('.main-mini-type').css({'opacity': 0});
+            if ($(this).find('.main-mini-type').length > 0) {
+                $(this).find('.main-mini-type-links').css({'top': $(this).find('.main-mini-type').offset().top - $(this).offset().top, 'opacity': 1});
+                $(this).find('.main-mini-type').css({'opacity': 0});
+            }
         });
 
         $('.page-404-tab-item').each(function() {
