@@ -1109,12 +1109,14 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .article-header-promo strong {font-weight:bold; font-size:18px; line-height:22px; margin:0 10px 0 0}
 .fonts-loaded .article-header-promo strong {font-family:Merriweather, sans-serif}
 .article-header-promo em {font-style:normal}
+.article-header-promo em+em {display:none}
 
 @media screen and (max-width:1159px) {
     .article-header {margin:0 0 24px 0}
     .article-header-promo {float:left}
-    .article-header-promo strong {margin:0 0 0 20px}
+    .article-header-promo strong {margin:0 10px 0 20px}
     .article-header-promo em {display:none}
+    .article-header-promo em+em {display:inline}
 }
 
 .article-infinity-item {position:relative}
