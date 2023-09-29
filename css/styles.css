@@ -213,24 +213,24 @@ header {height:203px}
 
 .header-top::after {content:""; display:block; clear:both}
 
-.logo {float:left; width:200px; height:43px; margin:33px 0 0 0; background:url(../images/logo.png) no-repeat; position:relative}
+.logo {float:left; width:200px; height:43px; margin:33px 0 0 0; background:url(../images/logo.svg) no-repeat; background-size:100%; position:relative}
 .logo a {display:block; position:absolute; left:0; top:0; right:0; bottom:0}
 .logo img {display:none}
 
 @media screen and (max-width:1159px) {
-    .logo {width:126px; height:27px; margin:22px 0 0 0; background:url(../images/logo-mobile.png) no-repeat}
+    .logo {width:126px; height:27px; margin:22px 0 0 0}
 }
 
-.fixed .logo {width:149px; height:32px; margin:14px 0 0 0; background:url(../images/logo-fixed.png) no-repeat}
+.fixed .logo {width:149px; height:32px; margin:14px 0 0 0}
 
 @media screen and (max-width:1159px) {
-    .fixed .logo {width:126px; height:27px; margin:24px 0 0 0; background:url(../images/logo-mobile.png) no-repeat}
+    .fixed .logo {width:126px; height:27px; margin:24px 0 0 0}
 }
 
-.menu-open .logo {width:200px; height:43px; margin:22px 0 0 0; background:url(../images/logo.png) no-repeat}
+.menu-open .logo {width:200px; height:43px; margin:22px 0 0 0}
 
 @media screen and (max-width:1159px) {
-    .menu-open .logo {width:126px; height:27px; margin:24px 0 0 0; background:url(../images/logo-mobile.png) no-repeat}
+    .menu-open .logo {width:126px; height:27px; margin:24px 0 0 0}
 }
 
 .header-title {display:none; float:left; margin:36px 0 0 89px; font-size:15px; line-height:40px; font-weight:normal; color:#797979}
@@ -366,6 +366,7 @@ nav ul li {float:left; margin:0 0 0 32px; padding:0; position:relative}
 nav ul li:first-child {margin:0}
 nav ul li::before {display:none}
 nav ul li a {float:left; color:#0b0b0b; text-decoration:none}
+nav ul li.red a,
 nav ul li.active a,
 nav ul li:hover a {color:#ec1d22; text-decoration:none}
 nav ul li ul {display:none; position:absolute; left:0; top:100%; margin:0; float:none; font-size:13px; padding:15px 39px; font-weight:normal; line-height:39px; white-space:nowrap; background:#fff; z-index:99; border:1px solid #e9e9e9; box-shadow:4px 4px 30px rgba(0, 0, 0, 0.15)}
@@ -397,6 +398,7 @@ nav ul li:hover ul li a:hover {color:#ec1d22}
 .menu-section+.menu-section {margin-top:16px}
 .menu-section-list+.menu-section {margin-top:36px}
 .menu-section a {color:#343434; text-decoration:none}
+.menu-section.red a,
 .menu-section.active a,
 .menu-section a:hover {color:#ec1d22; text-decoration:none}
 .menu-section-list {font-size:13px; line-height:16px; margin:19px 0 0 0}
@@ -1575,7 +1577,7 @@ footer {background:#f3f3f3; margin:85px 0 0 0; padding:51px 0 40px 0}
 .footer-content {border-top:1px solid #d7d7d7; margin:46px 0 0 0; padding:41px 0 0 0}
 .footer-content::after {content:""; display:block; clear:both}
 .footer-side {float:left; width:355px}
-.footer-logo {width:181px; height:38px; background:url(../images/footer-logo.png) no-repeat}
+.footer-logo {width:181px; height:38px; background:url(../images/logo.svg) no-repeat; background-size:100%}
 .footer-social {margin:28px 0 0 0; font-size:0; line-height:0; letter-spacing:-1px}
 .footer-social a {display:inline-block; vertical-align:top; margin:0 0 0 16px}
 .footer-social a:first-child {margin:0}
